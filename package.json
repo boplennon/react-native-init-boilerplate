@@ -12,6 +12,8 @@
     "apollo-boost": "^0.1.16",
     "apollo-client": "^2.4.2",
     "apollo-client-preset": "^1.0.8",
+    "aws-amplify": "^1.1.1",
+    "aws-amplify-react": "^2.0.2",
     "graphql": "^14.0.2",
     "graphql-tag": "^2.9.2",
     "graphql-tools": "^3.1.1",
@@ -19,7 +21,8 @@
     "react-apollo": "^2.1.11",
     "react-native": "0.57.0",
     "react-native-elements": "^0.19.1",
-    "react-native-vector-icons": "^5.0.0"
+    "react-native-vector-icons": "^5.0.0",
+    "react-navigation": "^2.14.2"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
