@@ -15,6 +15,7 @@ export const HomeScreen = () => (
             <FormLabel>- graphql</FormLabel>
             <FormLabel>- apollo-boost</FormLabel>
             <FormLabel>- aws-amplify</FormLabel>
+            <FormLabel>- react-navigation</FormLabel>
         </View>
         <FormLabel>React-Native Elements with icons</FormLabel>
         <FontAwesome name='map-o' color='blue' size={48} />
