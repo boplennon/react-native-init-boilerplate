@@ -123,3 +123,14 @@ node_modules
 *.apk
 
 **/__generated__/**
+
+# Jest
+#
+.jest/
+
+
+# ios/Pods,
+ios/Pods/
+
+# Podfile versions
+ios/Podfile.lock

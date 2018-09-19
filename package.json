@@ -4,47 +4,53 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
     "ios": "react-native run-ios",
     "android": "react-native run-android",
     "ts-init": "yarn tsc --init --pretty --jsx react && touch rn-cli.config.js && yarn add -D @types/react @types/react-native ts-jest  @types/jest @types/react @types/react-native @types/react-test-renderer",
     "build": "tsc",
     "tsw": "tsc --watch",
-    "postinstall": "yarn global add typescript ts-jest"
+    "postinstall": "yarn global add typescript ts-jest",
+    "test-watch": "node node_modules/jest/bin/jest.js --watch -u",
+    "test": "node node_modules/jest/bin/jest.js --ci",
+    "lint": "./lint.sh"
   },
   "dependencies": {
-    "@types/graphql": "^14.0.0",
-    "@types/react-native-vector-icons": "^4.6.3",
-    "@types/react-navigation": "^2.0.21",
     "apollo-boost": "^0.1.16",
     "apollo-client": "^2.4.2",
     "apollo-client-preset": "^1.0.8",
     "aws-amplify": "^1.1.1",
     "aws-amplify-react": "^2.0.2",
+    "enzyme": "^3.6.0",
     "graphql": "^14.0.2",
     "graphql-tag": "^2.9.2",
     "graphql-tools": "^3.1.1",
+    "lodash": "^4.17.11",
     "react": "16.5.0",
     "react-apollo": "^2.1.11",
     "react-native": "0.57.0",
     "react-native-elements": "^0.19.1",
+    "react-native-maps": "^0.21.0",
     "react-native-vector-icons": "^5.0.0",
     "react-navigation": "^2.14.2"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.1.14",
+    "@types/graphql": "^14.0.0",
     "@types/jest": "^23.3.2",
+    "@types/lodash": "^4.14.116",
     "@types/react": "^16.4.14",
     "@types/react-native": "^0.56.21",
+    "@types/react-native-vector-icons": "^4.6.3",
+    "@types/react-navigation": "^2.0.21",
     "@types/react-test-renderer": "^16.0.2",
     "babel-jest": "23.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.45.3",
+    "react-dom": "^16.5.2",
     "react-native-typescript-transformer": "^1.2.10",
     "react-test-renderer": "16.5.0",
     "ts-jest": "^23.1.4",
     "typescript": "^3.0.3"
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }
