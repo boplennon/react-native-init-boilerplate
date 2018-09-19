@@ -1,35 +1,40 @@
-import * as React from 'react';
-import { createBottomTabNavigator } from 'react-navigation';
-// @ts-ignore
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import { HomeScreen } from './HomeScreen';
-import { MapScreen } from './MapScreen';
+import { createMaterialBottomTabNavigator, TabConfig } from 'react-navigation-material-bottom-tabs';
+import { HomeScreen } from './home/HomeScreen';
+import { MapScreen } from './map/MapScreen';
+import { Colors } from './styles';
+import { Platform } from 'react-native';
+import { NavigationRouteConfigMap, NavigationBottomTabScreenOptions } from 'react-navigation';
 
-export default createBottomTabNavigator(
-  {
-    Home: HomeScreen,
-    Map: MapScreen,
-  },
-  {
-    navigationOptions: ({ navigation }) => ({
-      tabBarIcon: ({ focused, tintColor }) => {
-        const { routeName } = navigation.state;
-        let iconName;
-        if (routeName === 'Home') {
-          iconName = `user${focused ? '' : '-o'}`;
-        } else if (routeName === 'Map') {
-          iconName = `map${focused ? '' : '-o'}`;
-        }
+const tabBarOptions: TabConfig = {
+  activeTintColor: Colors.CrossYellow,
+  barStyle: { backgroundColor: Colors.CrossLightBlue }, 
+  inactiveTintColor: Colors.CrossDarkBlue
+}
 
-        // You can return any component that you like here! We usually use an
-        // icon component from react-native-vector-icons
-        // @ts-ignore
-        return <FontAwesome name={iconName} size={25} color={tintColor} />;
-      },
-    }),
-    tabBarOptions: {
-      activeTintColor: 'tomato',
-      inactiveTintColor: 'gray',
-    },
-  }
+/**
+ * Prefix used to identify this app
+ */
+export const appPrefix = 'myapp';
+
+// on Android, the URI prefix typically contains a host in addition to scheme
+// on Android, note the required / (slash) at the end of the host property
+/**
+ * Uri used to navigate to this app
+ */
+export const appUri = Platform.OS == 'android' ? `${appPrefix}://${appPrefix}/` : `${appPrefix}://`;
+
+export interface CrossTabStatelessComponent extends React.StatelessComponent {
+  navigationOptions?: NavigationBottomTabScreenOptions
+}
+
+const routeConfig: NavigationRouteConfigMap = {
+  Home: HomeScreen,
+  Map: MapScreen,
+};
+
+export const ReactNavigator = createMaterialBottomTabNavigator(
+  routeConfig,
+  tabBarOptions
 );
+
+export default ReactNavigator;

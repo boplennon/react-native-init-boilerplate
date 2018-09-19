@@ -68,10 +68,13 @@ export const CarouselStyles = StyleSheet.create({
 /**
  * Main theme for the app
  */
-const Theme = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'space-between',
+    paddingTop: 20,
+    paddingLeft: 10,
+    paddingRight: 10
   },
   buttonList: {
     flex: 1,
@@ -180,6 +183,9 @@ const Theme = StyleSheet.create({
   tabBarTitle: {
     color: 'green',
     alignSelf: 'center',
+  },
+  tabBarLabel:{
+    fontSize: 9
   },
   rowContentTopCenter: {
     flex: 1,
@@ -332,4 +338,4 @@ export const sortableGridImagesStyles = StyleSheet.create({
   },
 });
 
-export default Theme;
+export default styles;

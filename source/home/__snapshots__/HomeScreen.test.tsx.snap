@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly with defaults 1`] = `
+exports[`components HomeScreen renders correctly with defaults 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown />,
@@ -42,7 +42,10 @@ ShallowWrapper {
               - 2.14.2 react-navigation
             </UNDEFINED>
             <UNDEFINED>
-              - 0.21.0 react-native-maps
+              - ^2.0.1 react-native-paper
+            </UNDEFINED>
+            <UNDEFINED>
+              - ^0.4.0 react-navigation-material-bottom-tabs
             </UNDEFINED>
             <UNDEFINED>
               - 5.0.0 react-native-vector-icons
@@ -82,6 +85,9 @@ ShallowWrapper {
       "style": Object {
         "flex": 1,
         "justifyContent": "space-between",
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 20,
       },
     },
     "ref": null,
@@ -130,7 +136,10 @@ ShallowWrapper {
               - 2.14.2 react-navigation
             </UNDEFINED>
             <UNDEFINED>
-              - 0.21.0 react-native-maps
+              - ^2.0.1 react-native-paper
+            </UNDEFINED>
+            <UNDEFINED>
+              - ^0.4.0 react-navigation-material-bottom-tabs
             </UNDEFINED>
             <UNDEFINED>
               - 5.0.0 react-native-vector-icons
@@ -175,7 +184,10 @@ ShallowWrapper {
                 - 2.14.2 react-navigation
               </UNDEFINED>,
               <UNDEFINED>
-                - 0.21.0 react-native-maps
+                - ^2.0.1 react-native-paper
+              </UNDEFINED>,
+              <UNDEFINED>
+                - ^0.4.0 react-navigation-material-bottom-tabs
               </UNDEFINED>,
               <UNDEFINED>
                 - 5.0.0 react-native-vector-icons
@@ -259,10 +271,21 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "children": "- 0.21.0 react-native-maps",
+                "children": "- ^2.0.1 react-native-paper",
               },
               "ref": null,
-              "rendered": "- 0.21.0 react-native-maps",
+              "rendered": "- ^2.0.1 react-native-paper",
+              "type": undefined,
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "- ^0.4.0 react-navigation-material-bottom-tabs",
+              },
+              "ref": null,
+              "rendered": "- ^0.4.0 react-navigation-material-bottom-tabs",
               "type": undefined,
             },
             Object {
@@ -414,7 +437,10 @@ ShallowWrapper {
                 - 2.14.2 react-navigation
               </UNDEFINED>
               <UNDEFINED>
-                - 0.21.0 react-native-maps
+                - ^2.0.1 react-native-paper
+              </UNDEFINED>
+              <UNDEFINED>
+                - ^0.4.0 react-navigation-material-bottom-tabs
               </UNDEFINED>
               <UNDEFINED>
                 - 5.0.0 react-native-vector-icons
@@ -454,6 +480,9 @@ ShallowWrapper {
         "style": Object {
           "flex": 1,
           "justifyContent": "space-between",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 20,
         },
       },
       "ref": null,
@@ -502,7 +531,10 @@ ShallowWrapper {
                 - 2.14.2 react-navigation
               </UNDEFINED>
               <UNDEFINED>
-                - 0.21.0 react-native-maps
+                - ^2.0.1 react-native-paper
+              </UNDEFINED>
+              <UNDEFINED>
+                - ^0.4.0 react-navigation-material-bottom-tabs
               </UNDEFINED>
               <UNDEFINED>
                 - 5.0.0 react-native-vector-icons
@@ -547,7 +579,10 @@ ShallowWrapper {
                   - 2.14.2 react-navigation
                 </UNDEFINED>,
                 <UNDEFINED>
-                  - 0.21.0 react-native-maps
+                  - ^2.0.1 react-native-paper
+                </UNDEFINED>,
+                <UNDEFINED>
+                  - ^0.4.0 react-navigation-material-bottom-tabs
                 </UNDEFINED>,
                 <UNDEFINED>
                   - 5.0.0 react-native-vector-icons
@@ -631,10 +666,21 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "- 0.21.0 react-native-maps",
+                  "children": "- ^2.0.1 react-native-paper",
                 },
                 "ref": null,
-                "rendered": "- 0.21.0 react-native-maps",
+                "rendered": "- ^2.0.1 react-native-paper",
+                "type": undefined,
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "- ^0.4.0 react-navigation-material-bottom-tabs",
+                },
+                "ref": null,
+                "rendered": "- ^0.4.0 react-navigation-material-bottom-tabs",
                 "type": undefined,
               },
               Object {

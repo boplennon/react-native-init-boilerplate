@@ -4,15 +4,37 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "ios": "react-native run-ios",
-    "android": "react-native run-android",
     "ts-init": "yarn tsc --init --pretty --jsx react && touch rn-cli.config.js && yarn add -D @types/react @types/react-native ts-jest  @types/jest @types/react @types/react-native @types/react-test-renderer",
-    "build": "tsc",
     "tsw": "tsc --watch",
-    "postinstall": "yarn global add typescript ts-jest",
+    "lint": "./lint.sh",
+    "clean": "rm -rf build",
+    "install-globals": "yarn global add create-react-native-app react-native-cli typescript tslint prettier",
+    "android-run": "react-native run-android",
+    "android-run-release": "react-native run-android --variant=release",
+    "android-release": "yarn android-reverse && yarn android-run-release",
+    "android": "yarn android-reverse && yarn android-run",
+    "android-bundle": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "android-reverse": "adb reverse tcp:8081 tcp:8081",
+    "android-release-fix": "node ./android-release-gradle-fix.js",
+    "android-build": "yarn killbin && yarn android-clean && yarn android-release-fix && yarn android-bundle && cd android && ./gradlew assembleRelease -x bundleReleaseJsAndAssets --info",
+    "android-build-scan": "yarn killbin && yarn android-clean && yarn android-release-fix && yarn android-bundle && cd android && ./gradlew assembleRelease -x bundleReleaseJsAndAssets --full-stacktrace --scan",
+    "android-build-debug": "yarn killbin && yarn android-clean && yarn android-release-fix && yarn android-bundle && cd android && ./gradlew assembleRelease -x bundleReleaseJsAndAssets --full-stacktrace --debug",
+    "android-clean": "cd android && ./gradlew clean",
+    "killbin": "rm -rf ./node_modules/.bin",
+    "ios": "react-native run-ios --simulator=\"iPhone 7\"",
+    "ios6": "react-native run-ios --simulator=\"iPhone 6\"",
+    "ios8": "react-native run-ios --simulator=\"iPhone 8\"",
+    "ios8plus": "react-native run-ios --simulator=\"iPhone 8 Plus\"",
+    "ipad": "react-native run-ios --simulator=\"iPad (5th generation)\"",
+    "ios-device": "react-native run-ios",
+    "ios-build": "./iosBuild.sh",
     "test-watch": "node node_modules/jest/bin/jest.js --watch -u",
     "test": "node node_modules/jest/bin/jest.js --ci",
-    "lint": "./lint.sh"
+    "postinstall": "yarn android-release-fix",
+    "build": "tsc",
+    "build-watch": "tsc --watch",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "dev": "yarn install && yarn install-globals && yarn lint && yarn build"
   },
   "dependencies": {
     "apollo-boost": "^0.1.16",
@@ -29,9 +51,10 @@
     "react-apollo": "^2.1.11",
     "react-native": "0.57.0",
     "react-native-elements": "^0.19.1",
-    "react-native-maps": "^0.21.0",
+    "react-native-paper": "^2.0.1",
     "react-native-vector-icons": "^5.0.0",
-    "react-navigation": "^2.14.2"
+    "react-navigation": "^2.14.2",
+    "react-navigation-material-bottom-tabs": "^0.4.0"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.14",
@@ -42,9 +65,11 @@
     "@types/react-native": "^0.56.21",
     "@types/react-native-vector-icons": "^4.6.3",
     "@types/react-navigation": "^2.0.21",
+    "@types/react-navigation-material-bottom-tabs": "^0.3.0",
     "@types/react-test-renderer": "^16.0.2",
     "babel-jest": "23.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
+    "husky": "^1.0.0-rc.13",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.45.3",
     "react-dom": "^16.5.2",
@@ -52,5 +77,10 @@
     "react-test-renderer": "16.5.0",
     "ts-jest": "^23.1.4",
     "typescript": "^3.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build && yarn test"
+    }
   }
 }

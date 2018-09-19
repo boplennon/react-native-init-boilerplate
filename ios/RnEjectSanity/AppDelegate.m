@@ -14,6 +14,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  // add the api key obtained from Google Console
+  // [GMSServices provideAPIKey:@"AIzaSyARKWAxjv22kKCxPrGtg8TDu-BqsfUoags"];
+  
   NSURL *jsCodeLocation;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];

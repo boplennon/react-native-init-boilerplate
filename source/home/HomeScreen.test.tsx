@@ -10,7 +10,11 @@ function setup() {
   );
 }
 
+describe('components', () => {
+  describe('HomeScreen', () => {
 it('renders correctly with defaults', () => {
   const wrapper = setup();
   expect(wrapper).toMatchSnapshot();
+});
+});
 });

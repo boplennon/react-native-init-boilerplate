@@ -15,8 +15,8 @@ import ApolloContainer from './ApolloContainer';
 
 export default class App extends Component {
   render() {
-    return (
-      <ApolloContainer />
+    return (      
+      <ApolloContainer/>
     );
   }
 }
