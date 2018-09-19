@@ -10,6 +10,7 @@ iOS and Android test version deplpoyed through VSTS and Microsoft App Center.
 **Remarks:** Currently expects backend on "localhost" so it will not work on device.
 
 ## Build status
+
 TODO
 
 ## Read more
@@ -29,10 +30,13 @@ TODO
 - Public backend endpoint
 
 # Project resources
+
 ## Mock
+
 TODO
 
 ## Sentry
+
 TODO
 
 ## Backlog & kanban

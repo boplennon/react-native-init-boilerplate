@@ -23,80 +23,83 @@ Always run **[`yarn dev`](#yarn-dev)** after pull / clone!
 > sudo chmod u+x ./\*\*.sh
 
 ## Table of Contents
+
 - [React-Native Init Boilerplate](#react-native-init-boilerplate)
-  * [Table of Contents](#table-of-contents)
-  * [React-Native 0.57.0](#react-native-0570)
-  * [Can not run ShellScript](#can-not-run-shellscript)
-  * [GraphQL Apollo implementation](#graphql-apollo-implementation)
+  - [Table of Contents](#table-of-contents)
+  - [React-Native 0.57.0](#react-native-0570)
+  - [Can not run ShellScript](#can-not-run-shellscript)
+  - [GraphQL Apollo implementation](#graphql-apollo-implementation)
 - [Project resources](#project-resources)
-  * [Insights Sentry](#insights-sentry)
-  * [Backlog & kanban](#backlog---kanban)
-  * [Build server and deploy: VS App Center](#build-server-and-deploy--vs-app-center)
-  * [Source Control: GitHub](#source-control--github)
+  - [Insights Sentry](#insights-sentry)
+  - [Backlog & kanban](#backlog---kanban)
+  - [Build server and deploy: VS App Center](#build-server-and-deploy--vs-app-center)
+  - [Source Control: GitHub](#source-control--github)
 - [Tools](#tools)
-  * [Java](#java)
-  * [Git](#git)
-    + [Git Credential Manager](#git-credential-manager)
-  * [Node](#node)
-  * [Yarn](#yarn)
-  * [Visual Studio Code](#visual-studio-code)
-  * [Bash on Windows](#bash-on-windows)
+  - [Java](#java)
+  - [Git](#git)
+    - [Git Credential Manager](#git-credential-manager)
+  - [Node](#node)
+  - [Yarn](#yarn)
+  - [Visual Studio Code](#visual-studio-code)
+  - [Bash on Windows](#bash-on-windows)
 - [Installation](#installation)
 - [Scripts](#scripts)
-  * [yarn dev](#yarn-dev)
-  * [yarn lint](#yarn-lint)
-  * [yarn build](#yarn-build)
-  * [yarn build-watch](#yarn-build-watch)
-  * [yarn start](#yarn-start)
-  * [yarn test-watch](#yarn-test-watch)
-  * [yarn test](#yarn-test)
-  * [yarn ios](#yarn-ios)
-  * [yarn android](#yarn-android)
+  - [yarn dev](#yarn-dev)
+  - [yarn lint](#yarn-lint)
+  - [yarn build](#yarn-build)
+  - [yarn build-watch](#yarn-build-watch)
+  - [yarn start](#yarn-start)
+  - [yarn test-watch](#yarn-test-watch)
+  - [yarn test](#yarn-test)
+  - [yarn ios](#yarn-ios)
+  - [yarn android](#yarn-android)
 - [Integrations](#integrations)
-  * [AppCenter](#appcenter)
-  * [Sentry](#sentry)
-    + [Organization short name](#organization-short-name)
-    + [Project short name](#project-short-name)
-    + [Project ID](#project-id)
-    + [DSN Public](#dsn-public)
-    + [CSP Endpoint](#csp-endpoint)
-    + [Public key](#public-key)
-    + [Auth token](#auth-token)
-  * [Google Maps](#google-maps)
-  * [Facebook](#facebook)
+  - [AppCenter](#appcenter)
+  - [Sentry](#sentry)
+    - [Organization short name](#organization-short-name)
+    - [Project short name](#project-short-name)
+    - [Project ID](#project-id)
+    - [DSN Public](#dsn-public)
+    - [CSP Endpoint](#csp-endpoint)
+    - [Public key](#public-key)
+    - [Auth token](#auth-token)
+  - [Google Maps](#google-maps)
+  - [Facebook](#facebook)
 - [Delivery & Deployment](#delivery---deployment)
-    + [Google Web Client ID](#google-web-client-id)
-    + [Google OAuth Client ID](#google-oauth-client-id)
+  - [Google Web Client ID](#google-web-client-id)
+  - [Google OAuth Client ID](#google-oauth-client-id)
   * [Android keystore](#android-keystore)
-    + [alias](#alias)
-    + [key](#key)
-    + [keyhash](#keyhash)
-    + [MD5](#md5)
-    + [SHA1](#sha1)
-    + [SHA256](#sha256)
+    - [alias](#alias)
+    - [key](#key)
+    - [keyhash](#keyhash)
+    - [MD5](#md5)
+    - [SHA1](#sha1)
+    - [SHA256](#sha256)
   * [iOS](#ios)
-    + [Google OAuth](#google-oauth)
+    - [Google OAuth](#google-oauth)
       - [Client ID](#client-id)
       - [URL Scheme](#url-scheme)
   * [Package name](#package-name)
 - [Debugging](#debugging)
 - [Release](#release)
 - [Environment Variables](#environment-variables)
-  * [Configuring Packager IP Address](#configuring-packager-ip-address)
+  - [Configuring Packager IP Address](#configuring-packager-ip-address)
 - [Troubleshooting](#troubleshooting)
-  * [Networking](#networking)
-  * [iOS Simulator won't open](#ios-simulator-won-t-open)
+  - [Networking](#networking)
+  - [iOS Simulator won't open](#ios-simulator-won-t-open)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## React-Native 0.57.0
+
 This project uses latest RN release by default, but to manually upgrade an existing project see release notes:
 
-
 ## Can not run ShellScript
+
 Adjust the rights on SH-files for your user (in root). Remarks: we use **[bash terminal in VS Code](#bash-on-windows)**
 
 ## GraphQL Apollo implementation
+
 This project uses Apollo for state management as well as endpoint to the GraphQL backend.
 
 Learn more about our implementation:
@@ -140,7 +143,7 @@ sudo rm -rf "~/Library/Java"
 
 We're using latest stable. Install the version for your OS from:
 
-**[https://git-scm.com/downloads](https://git-scm.com/downloads 'Download Git')**
+**[https://git-scm.com/downloads](https://git-scm.com/downloads "Download Git")**
 
 ### Git Credential Manager
 
@@ -265,6 +268,7 @@ Like `npm start`, but also attempts to open your app on a connected Android devi
 # Integrations
 
 ## AppCenter
+
 ## Sentry
 
 ### Organization short name

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styles, { TabIconSize } from '../styles';
-import { Text, View, ScrollView } from "react-native";
+import { Text, View, ScrollView } from 'react-native';
 import { FormLabel, Icon } from 'react-native-elements';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { CrossTabStatelessComponent } from '../ReactNavigator';
@@ -35,7 +35,7 @@ export const HomeScreen: CrossTabStatelessComponent = () => (
 HomeScreen.navigationOptions = {
 
     tabBarIcon: <FontAwesome name='home' size={TabIconSize} color='white' />,
-    tabBarLabel: <Text style={styles.tabBarLabel}>Home</Text>
-}
+    tabBarLabel: <Text style={styles.tabBarLabel}>Home</Text>,
+};
 
 export default HomeScreen;

@@ -27,10 +27,6 @@ interface IProps {
 }
 
 export class MapScreen extends React.Component<IProps, IState> {
-  static navigationOptions: NavigationBottomTabScreenOptions = {
-    tabBarIcon: <FontAwesome name='map-o' size={TabIconSize} color='white' />,
-    tabBarLabel: <Text style={styles.tabBarLabel}>Map</Text>
-  }
 
   constructor(props: IProps) {
     super(props);
@@ -49,6 +45,10 @@ export class MapScreen extends React.Component<IProps, IState> {
     this.onMapReady = this.onMapReady.bind(this);
     this.onUserLocationChange = this.onUserLocationChange.bind(this);
   }
+  static navigationOptions: NavigationBottomTabScreenOptions = {
+    tabBarIcon: <FontAwesome name='map-o' size={TabIconSize} color='white' />,
+    tabBarLabel: <Text style={styles.tabBarLabel}>Map</Text>,
+  };
 
   componentWillMount() {
     MapboxGL.setAccessToken(accessToken);
