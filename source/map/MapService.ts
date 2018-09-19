@@ -89,7 +89,7 @@ class MapService {
 
     const targetCoords = {
       latitude: Number(coordinate.latitude),
-      longitude: Number(coordinate.longitude)
+      longitude: Number(coordinate.longitude),
     };
 
     console.log("** MapService: goToCoordinate **");
@@ -143,10 +143,7 @@ class MapService {
    * @returns
    * @memberof MapService
    */
-  fitToCoordinates(
-    coordinates: Array<types.ILatLng>,
-    options?: IFitToCoordOptions
-  ) {
+  fitToCoordinates(coordinates: types.ILatLng[], options?: IFitToCoordOptions) {
     if (_.isNil(this.map)) {
       return;
     }
@@ -182,7 +179,7 @@ class MapService {
           this.goToAngle(45);
           const targetCord = new Array<types.ILatLng>({
             latitude: userLocation.latitude,
-            longitude: userLocation.longitude
+            longitude: userLocation.longitude,
           });
           this.fitToCoordinates(targetCord);
 
@@ -246,7 +243,7 @@ class MapService {
       if (mapState) {
         this.goToCoordinate({
           latitude: mapState.location.latitude,
-          longitude: mapState.location.longitude
+          longitude: mapState.location.longitude,
         });
         // this.map.fitToCoordinates(_.map(this.state.markers, m => m.location), {
         //   edgePadding,

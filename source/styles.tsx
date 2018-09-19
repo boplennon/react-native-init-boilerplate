@@ -1,4 +1,4 @@
-import { StyleSheet, Platform, Dimensions } from "react-native";
+import { Dimensions, Platform, StyleSheet } from "react-native";
 const { width, height } = Dimensions.get("window");
 
 const screenWidth = width < height ? width : height;
@@ -10,7 +10,7 @@ export enum Colors {
   CrossBlack = "#2f2f2f",
   CancelButton = "#ff0000",
   NextButton = "#349b34",
-  BackButton = "#3180e0"
+  BackButton = "#3180e0",
 }
 
 /**
@@ -21,9 +21,7 @@ export enum Colors {
 export const TabIconSize: number = Platform.OS === "android" ? 22 : 22;
 
 const IS_IOS = Platform.OS === "ios";
-const { width: viewportWidth, height: viewportHeight } = Dimensions.get(
-  "window"
-);
+const { width: viewportWidth, height: viewportHeight } = Dimensions.get("window");
 
 function wp(percentage: number) {
   const value = (percentage * viewportWidth) / 100;
@@ -44,25 +42,25 @@ export const CarouselStyles = StyleSheet.create({
     width: itemWidth,
     height: slideHeight,
     paddingHorizontal: itemHorizontalMargin,
-    paddingBottom: 18 // needed for shadow
+    paddingBottom: 18, // needed for shadow
   },
   imageContainer: {
     flex: 1,
     marginBottom: IS_IOS ? 0 : -1, // Prevent a random Android rendering issue
     backgroundColor: "white",
     borderTopLeftRadius: entryBorderRadius,
-    borderTopRightRadius: entryBorderRadius
+    borderTopRightRadius: entryBorderRadius,
   },
   imageContainerEven: {
-    backgroundColor: Colors.CrossBlack
+    backgroundColor: Colors.CrossBlack,
   },
   image: {
     ...StyleSheet.absoluteFillObject,
     resizeMode: "cover",
     borderRadius: IS_IOS ? entryBorderRadius : 0,
     borderTopLeftRadius: entryBorderRadius,
-    borderTopRightRadius: entryBorderRadius
-  }
+    borderTopRightRadius: entryBorderRadius,
+  },
 });
 
 /**
@@ -74,35 +72,35 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
     paddingTop: 20,
     paddingLeft: 10,
-    paddingRight: 10
+    paddingRight: 10,
   },
   buttonList: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-evenly",
-    alignItems: "flex-start"
+    alignItems: "flex-start",
   },
   listButton: {
     height: 40,
-    flex: 1
+    flex: 1,
   },
   button: {
     marginTop: 10,
     marginRight: 10,
-    height: 45
+    height: 45,
   },
   paddingDefault: {
-    padding: 10
+    padding: 10,
   },
   label: {
     color: "gray",
-    fontSize: 14
+    fontSize: 14,
   },
   tabIcon: {
     // Icons in tab bar won't show without explicit width / height
     width: 25,
     height: TabIconSize,
-    color: "white"
+    color: "white",
   },
   absoluteCentered: {
     position: "absolute",
@@ -111,7 +109,7 @@ export const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   absoluteTop: {
     position: "absolute",
@@ -119,7 +117,7 @@ export const styles = StyleSheet.create({
     left: 0,
     right: 0,
     alignItems: "center",
-    justifyContent: "flex-start"
+    justifyContent: "flex-start",
   },
   absoluteTopRight: {
     position: "absolute",
@@ -127,7 +125,7 @@ export const styles = StyleSheet.create({
     left: 0,
     right: 0,
     alignItems: "flex-end",
-    justifyContent: "flex-start"
+    justifyContent: "flex-start",
   },
   absoluteTopLeft: {
     position: "absolute",
@@ -135,7 +133,7 @@ export const styles = StyleSheet.create({
     left: 0,
     right: 0,
     alignItems: "flex-start",
-    justifyContent: "flex-start"
+    justifyContent: "flex-start",
   },
   absoluteBottom: {
     position: "absolute",
@@ -143,7 +141,7 @@ export const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     alignItems: "center",
-    justifyContent: "flex-end"
+    justifyContent: "flex-end",
   },
   absoluteBottomRight: {
     position: "absolute",
@@ -151,7 +149,7 @@ export const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     alignItems: "flex-end",
-    justifyContent: "flex-end"
+    justifyContent: "flex-end",
   },
   absoluteBottomLeft: {
     position: "absolute",
@@ -159,78 +157,78 @@ export const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     alignItems: "flex-start",
-    justifyContent: "flex-end"
+    justifyContent: "flex-end",
   },
   centerVerticalAndHorizontal: {
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   alignCenterJustifyStart: {
     alignItems: "center",
-    justifyContent: "flex-start"
+    justifyContent: "flex-start",
   },
   alignStartJustifyStart: {
     alignItems: "flex-start",
-    justifyContent: "flex-start"
+    justifyContent: "flex-start",
   },
   alignEndJustifyStart: {
     alignItems: "flex-end",
-    justifyContent: "flex-start"
+    justifyContent: "flex-start",
   },
   tabBar: {
-    backgroundColor: Colors.CrossLightBlue
+    backgroundColor: Colors.CrossLightBlue,
   },
   tabBarTitle: {
     color: "green",
-    alignSelf: "center"
+    alignSelf: "center",
   },
   tabBarLabel: {
-    fontSize: 9
+    fontSize: 9,
   },
   rowContentTopCenter: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "center",
-    alignItems: "flex-start"
+    alignItems: "flex-start",
   },
   rowContentTopLeft: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "flex-start",
-    alignItems: "flex-start"
+    alignItems: "flex-start",
   },
   rowContentTopRight: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "flex-end",
-    alignItems: "flex-start"
+    alignItems: "flex-start",
   },
   columnContentTopCenter: {
     flex: 1,
     flexDirection: "column",
     justifyContent: "flex-start",
-    alignItems: "center"
+    alignItems: "center",
   },
   columnContentTopLeft: {
     flex: 1,
     flexDirection: "column",
     justifyContent: "flex-start",
-    alignItems: "flex-start"
+    alignItems: "flex-start",
   },
   columnContentTopRight: {
     flex: 1,
     flexDirection: "column",
     justifyContent: "flex-start",
-    alignItems: "flex-end"
+    alignItems: "flex-end",
   },
   columnContentCenterRight: {
     flex: 1,
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "flex-end"
+    alignItems: "flex-end",
   },
   backgroundWhite: {
-    backgroundColor: "#ffffff"
+    backgroundColor: "#ffffff",
   },
   overlay: {
     backgroundColor: "rgba(254, 222, 0, 0.3)",
@@ -238,7 +236,7 @@ export const styles = StyleSheet.create({
     left: 0,
     top: 0,
     bottom: 0,
-    right: 0
+    right: 0,
   },
   spinner: {
     width: 50,
@@ -247,10 +245,10 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "flex-end",
-    opacity: 1
+    opacity: 1,
   },
   textCenter: {
-    textAlign: "center"
+    textAlign: "center",
   },
   textSpinner: {
     fontSize: 20,
@@ -258,8 +256,8 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     fontWeight: "normal",
     marginTop: 5,
-    opacity: 1
-  }
+    opacity: 1,
+  },
 });
 
 export const autoCompleteStyles = StyleSheet.create({
@@ -268,22 +266,22 @@ export const autoCompleteStyles = StyleSheet.create({
   // },
   padding: { padding: 20 },
   listView: {
-    backgroundColor: "#ffffff"
+    backgroundColor: "#ffffff",
   },
   textInputContainer: {
     borderBottomWidth: 0,
-    borderTopWidth: 0
+    borderTopWidth: 0,
   },
   textInput: {
     color: "#00539b",
-    fontSize: 16
+    fontSize: 16,
   },
   description: {
-    fontWeight: "bold"
+    fontWeight: "bold",
   },
   predefinedPlacesDescription: {
-    color: "#fede00"
-  }
+    color: "#fede00",
+  },
 });
 
 export const sortableGridImagesStyles = StyleSheet.create({
@@ -292,50 +290,50 @@ export const sortableGridImagesStyles = StyleSheet.create({
     margin: 8.5,
     borderRadius: 10,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
   carItem: {
     width: 200,
     height: 200,
-    resizeMode: "contain"
+    resizeMode: "contain",
   },
   contentContainer: {
-    flex: 9
+    flex: 9,
   },
   buttonView: {
     justifyContent: "space-between",
     flexDirection: "row",
-    marginHorizontal: 15
+    marginHorizontal: 15,
   },
   button: {
     width: 150,
     height: 50,
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   imageButton: {
-    flexDirection: "row"
+    flexDirection: "row",
   },
   button1: {
-    backgroundColor: "#257FE6"
+    backgroundColor: "#257FE6",
   },
   button2: {
-    backgroundColor: "#37AB33"
+    backgroundColor: "#37AB33",
   },
   buttonText: {
-    color: "#fff"
+    color: "#fff",
   },
   bottom: {
     width: screenWidth,
     alignSelf: "center",
-    flex: 1
+    flex: 1,
   },
   cam: {
     width: 16,
     height: 16,
     resizeMode: "contain",
-    marginRight: 2
-  }
+    marginRight: 2,
+  },
 });
 
 export default styles;

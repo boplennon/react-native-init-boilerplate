@@ -8,9 +8,9 @@
  * @type {Object}
  */
 export enum MapConstants {
-  MAP_LOCATION_BUSY = "Letar upp dig",
-  MAP_LOCATION_SUCCESS = "MAP = GET LOCATION SUCCESS",
-  MAP_LOCATION_FAILED = "MAP = GET LOCATION FAILED"
+  MAP_LOCATION_BUSY = 'Letar upp dig',
+  MAP_LOCATION_SUCCESS = 'MAP = GET LOCATION SUCCESS',
+  MAP_LOCATION_FAILED = 'MAP = GET LOCATION FAILED',
 }
 
 /**
@@ -108,7 +108,7 @@ export const MapState = (
     latitude: 0,
     longitude: 0,
     latitudeDelta: 0,
-    longitudeDelta: 0
+    longitudeDelta: 0,
   },
   isUserSearch = false,
   __typename = MapConstants.MAP_LOCATION_BUSY
@@ -116,7 +116,7 @@ export const MapState = (
   const r: IMapState = {
     location,
     isUserSearch,
-    __typename
+    __typename,
   };
   return r;
 };

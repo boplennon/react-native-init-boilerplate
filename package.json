@@ -74,11 +74,17 @@
     "husky": "^1.0.0-rc.13",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.45.3",
+    "prettier": "^1.14.3",
     "react-dom": "^16.5.2",
     "react-native-typescript-transformer": "^1.2.10",
     "react-test-renderer": "16.5.0",
     "ts-jest": "^23.1.4",
-    "typescript": "^3.0.3"
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^2.0.0",
+    "typescript": "^3.0.3",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0"
   },
   "husky": {
     "hooks": {

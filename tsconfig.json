@@ -47,7 +47,6 @@
     "noImplicitReturns": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
-    "pretty": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
@@ -62,15 +61,8 @@
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
   "include": ["source"],
-  "compileOnSave": true,
   "typeAcquisition": {
     "enable": false
   },
-  "exclude": [
-    "android",
-    "ios",
-    "build",
-    "node_modules/**/*",
-    "source/**/*.test.*"
-  ]
+  "exclude": ["android", "ios", "build", "node_modules/**/*", "source/**/*.test.*"]
 }

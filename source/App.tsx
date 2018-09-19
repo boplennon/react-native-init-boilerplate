@@ -9,11 +9,10 @@
  * @flow
  */
 
-import React from "react";
-import { Component } from "react";
-import ApolloContainer from "./ApolloContainer";
+import React from 'react';
+import ApolloContainer from './ApolloContainer';
 
-export default class App extends Component {
+export default class App extends React.Component {
   render() {
     return <ApolloContainer />;
   }

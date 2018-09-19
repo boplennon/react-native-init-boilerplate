@@ -1,17 +1,12 @@
 import * as React from 'react';
 
 import _ from 'lodash';
-import * as types from './types';
-import MapService from './MapService';
 import { Text } from 'react-native';
-import styles, { TabIconSize } from '../styles';
-import { NavigationBottomTabScreenOptions } from 'react-navigation';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-// @ts-ignore
-import MapboxGL from '@mapbox/react-native-mapbox-gl';
-
-// TODO: get from app secure config
-const accessToken = '';
+import { NavigationBottomTabScreenOptions } from 'react-navigation';
+import styles, { TabIconSize } from '../styles';
+import MapService from './MapService';
+import * as types from './types';
 
 interface IState {
   region?: types.IRegion;
@@ -27,7 +22,6 @@ interface IProps {
 }
 
 export class MapScreen extends React.Component<IProps, IState> {
-
   constructor(props: IProps) {
     super(props);
     this.state = {
@@ -37,7 +31,6 @@ export class MapScreen extends React.Component<IProps, IState> {
         longitude: 18.062976,
         latitudeDelta: 0.0059397161733585335,
         longitudeDelta: 0.005845874547958374,
-
       },
     };
 
@@ -46,13 +39,9 @@ export class MapScreen extends React.Component<IProps, IState> {
     this.onUserLocationChange = this.onUserLocationChange.bind(this);
   }
   static navigationOptions: NavigationBottomTabScreenOptions = {
-    tabBarIcon: <FontAwesome name='map-o' size={TabIconSize} color='white' />,
+    tabBarIcon: <FontAwesome name="map-o" size={TabIconSize} color="white" />,
     tabBarLabel: <Text style={styles.tabBarLabel}>Map</Text>,
   };
-
-  componentWillMount() {
-    MapboxGL.setAccessToken(accessToken);
-  }
 
   onMapReady() {
     this.setState({ mapMargin: 0 });
@@ -83,16 +72,7 @@ export class MapScreen extends React.Component<IProps, IState> {
   }
 
   render() {
-    return (
-        <MapboxGL.MapView
-          showUserLocation={true}
-          zoomLevel={16}
-          userTrackingMode={MapboxGL.UserTrackingModes.Follow}
-          styleURL={MapboxGL.StyleURL.Street}
-          style={{flex: 1, padding: 0, margin: 0}}
-          ref={(c: any) => (MapService.Instance.setMap(c))}
-        />
-    );
+    return <Text>TODO</Text>;
   }
 }
 
