@@ -89,6 +89,7 @@ export class MapScreen extends React.Component<IProps, IState> {
           zoomLevel={16}
           userTrackingMode={MapboxGL.UserTrackingModes.Follow}
           styleURL={MapboxGL.StyleURL.Street}
+          style={{flex: 1, padding: 0, margin: 0}}
           ref={(c: any) => (MapService.Instance.setMap(c))}
         />
     );

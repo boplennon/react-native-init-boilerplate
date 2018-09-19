@@ -18,6 +18,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "showUserLocation": true,
+      "style": Object {
+        "flex": 1,
+        "margin": 0,
+        "padding": 0,
+      },
       "styleURL": "Street",
       "userTrackingMode": "Follow",
       "zoomLevel": 16,
@@ -33,6 +38,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "showUserLocation": true,
+        "style": Object {
+          "flex": 1,
+          "margin": 0,
+          "padding": 0,
+        },
         "styleURL": "Street",
         "userTrackingMode": "Follow",
         "zoomLevel": 16,
