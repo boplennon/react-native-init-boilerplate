@@ -37,6 +37,7 @@
     "dev": "yarn install && yarn install-globals && yarn lint && yarn build"
   },
   "dependencies": {
+    "@mapbox/react-native-mapbox-gl": "^6.1.3",
     "apollo-boost": "^0.1.16",
     "apollo-client": "^2.4.2",
     "apollo-client-preset": "^1.0.8",
@@ -61,6 +62,7 @@
     "@types/graphql": "^14.0.0",
     "@types/jest": "^23.3.2",
     "@types/lodash": "^4.14.116",
+    "@types/mapbox-gl": "^0.48.0",
     "@types/react": "^16.4.14",
     "@types/react-native": "^0.56.21",
     "@types/react-native-vector-icons": "^4.6.3",

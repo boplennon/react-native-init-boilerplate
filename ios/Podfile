@@ -35,6 +35,9 @@ target 'RnEjectSanity' do
   #pod 'GLog', :podspec => "#{rn_path}/third-party-podspecs/GLog.podspec"
   pod 'Folly', :podspec => "#{rn_path}/third-party-podspecs/Folly.podspec"
 
+  # Mapbox
+  pod 'react-native-mapbox-gl', :path => '../node_modules/@mapbox/react-native-mapbox-gl'
+  
   target 'RnEjectSanityTests' do
     inherit! :search_paths
     # Pods for testing

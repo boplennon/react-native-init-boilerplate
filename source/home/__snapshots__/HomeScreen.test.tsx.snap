@@ -39,6 +39,9 @@ ShallowWrapper {
               - 23.1.4 ts-jest
             </UNDEFINED>
             <UNDEFINED>
+              - ^6.1.3 @mapbox/react-native-mapbox-gl
+            </UNDEFINED>
+            <UNDEFINED>
               - 2.14.2 react-navigation
             </UNDEFINED>
             <UNDEFINED>
@@ -133,6 +136,9 @@ ShallowWrapper {
               - 23.1.4 ts-jest
             </UNDEFINED>
             <UNDEFINED>
+              - ^6.1.3 @mapbox/react-native-mapbox-gl
+            </UNDEFINED>
+            <UNDEFINED>
               - 2.14.2 react-navigation
             </UNDEFINED>
             <UNDEFINED>
@@ -179,6 +185,9 @@ ShallowWrapper {
               </UNDEFINED>,
               <UNDEFINED>
                 - 23.1.4 ts-jest
+              </UNDEFINED>,
+              <UNDEFINED>
+                - ^6.1.3 @mapbox/react-native-mapbox-gl
               </UNDEFINED>,
               <UNDEFINED>
                 - 2.14.2 react-navigation
@@ -253,6 +262,17 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "- 23.1.4 ts-jest",
+              "type": undefined,
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "- ^6.1.3 @mapbox/react-native-mapbox-gl",
+              },
+              "ref": null,
+              "rendered": "- ^6.1.3 @mapbox/react-native-mapbox-gl",
               "type": undefined,
             },
             Object {
@@ -434,6 +454,9 @@ ShallowWrapper {
                 - 23.1.4 ts-jest
               </UNDEFINED>
               <UNDEFINED>
+                - ^6.1.3 @mapbox/react-native-mapbox-gl
+              </UNDEFINED>
+              <UNDEFINED>
                 - 2.14.2 react-navigation
               </UNDEFINED>
               <UNDEFINED>
@@ -528,6 +551,9 @@ ShallowWrapper {
                 - 23.1.4 ts-jest
               </UNDEFINED>
               <UNDEFINED>
+                - ^6.1.3 @mapbox/react-native-mapbox-gl
+              </UNDEFINED>
+              <UNDEFINED>
                 - 2.14.2 react-navigation
               </UNDEFINED>
               <UNDEFINED>
@@ -574,6 +600,9 @@ ShallowWrapper {
                 </UNDEFINED>,
                 <UNDEFINED>
                   - 23.1.4 ts-jest
+                </UNDEFINED>,
+                <UNDEFINED>
+                  - ^6.1.3 @mapbox/react-native-mapbox-gl
                 </UNDEFINED>,
                 <UNDEFINED>
                   - 2.14.2 react-navigation
@@ -648,6 +677,17 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "- 23.1.4 ts-jest",
+                "type": undefined,
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "- ^6.1.3 @mapbox/react-native-mapbox-gl",
+                },
+                "ref": null,
+                "rendered": "- ^6.1.3 @mapbox/react-native-mapbox-gl",
                 "type": undefined,
               },
               Object {

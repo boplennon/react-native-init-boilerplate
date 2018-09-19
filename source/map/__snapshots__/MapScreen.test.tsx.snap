@@ -15,63 +15,31 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": <UNDEFINED>
-        TODO: Map
-      </UNDEFINED>,
-      "style": Object {
-        "flex": 1,
-        "justifyContent": "space-between",
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 20,
-      },
+      "showUserLocation": true,
+      "styleURL": "Street",
+      "userTrackingMode": "Follow",
+      "zoomLevel": 16,
     },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": "TODO: Map",
-      },
-      "ref": null,
-      "rendered": "TODO: Map",
-      "type": undefined,
-    },
-    "type": undefined,
+    "ref": [Function],
+    "rendered": null,
+    "type": "View",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": <UNDEFINED>
-          TODO: Map
-        </UNDEFINED>,
-        "style": Object {
-          "flex": 1,
-          "justifyContent": "space-between",
-          "paddingLeft": 10,
-          "paddingRight": 10,
-          "paddingTop": 20,
-        },
+        "showUserLocation": true,
+        "styleURL": "Street",
+        "userTrackingMode": "Follow",
+        "zoomLevel": 16,
       },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": "TODO: Map",
-        },
-        "ref": null,
-        "rendered": "TODO: Map",
-        "type": undefined,
-      },
-      "type": undefined,
+      "ref": [Function],
+      "rendered": null,
+      "type": "View",
     },
   ],
   Symbol(enzyme.__options__): Object {

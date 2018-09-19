@@ -3,11 +3,15 @@ import * as React from 'react';
 import _ from 'lodash';
 import * as types from './types';
 import MapService from './MapService';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
 import styles, { TabIconSize } from '../styles';
 import { NavigationBottomTabScreenOptions } from 'react-navigation';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+// @ts-ignore
+import MapboxGL from '@mapbox/react-native-mapbox-gl';
 
+// TODO: get from app secure config
+const accessToken = '';
 
 interface IState {
   region?: types.IRegion;
@@ -46,6 +50,10 @@ export class MapScreen extends React.Component<IProps, IState> {
     this.onUserLocationChange = this.onUserLocationChange.bind(this);
   }
 
+  componentWillMount() {
+    MapboxGL.setAccessToken(accessToken);
+  }
+
   onMapReady() {
     this.setState({ mapMargin: 0 });
   }
@@ -76,34 +84,13 @@ export class MapScreen extends React.Component<IProps, IState> {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text>TODO: Map</Text>
-      </View>
-      // <MapView
-      //   maxZoomLevel={18}
-      //   loadingEnabled
-      //   showsBuildings={false}
-      //   showsUserLocation
-      //   showsMyLocationButton={true}
-      //   toolbarEnabled={false}
-      //   onRegionChangeComplete={(region: types.IRegion) => {
-      //     if (_.isEqual(region, this.state.region)) {
-      //       return;
-      //     }
-
-      //     this.setState({
-      //       region,
-      //     });
-      //   }}
-      //   loadingIndicatorColor='#00539b'
-      //   region={this.state.region}
-      //   showsCompass={true}
-      //   ref={this.setMap}
-      //   onMapReady={this.onMapReady}
-      //   style={[Theme.container, { marginBottom: this.state.mapMargin }]}
-      //   provider={PROVIDER_GOOGLE}
-      // >
-      // </MapView>
+        <MapboxGL.MapView
+          showUserLocation={true}
+          zoomLevel={16}
+          userTrackingMode={MapboxGL.UserTrackingModes.Follow}
+          styleURL={MapboxGL.StyleURL.Street}
+          ref={(c: any) => (MapService.Instance.setMap(c))}
+        />
     );
   }
 }
