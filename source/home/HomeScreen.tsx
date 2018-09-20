@@ -15,6 +15,7 @@ export const HomeScreen: CrossTabStatelessComponent = () => (
         <FormLabel>- 0.57.0 react-native</FormLabel>
         <FormLabel>- 3.0.3 typescript</FormLabel>
         <FormLabel>- 23.1.4 ts-jest</FormLabel>
+        <FormLabel>- 0.39.0 react-native-sentry</FormLabel>
         <FormLabel>- 0.21.0 react-native-maps</FormLabel>
         <FormLabel>- 2.14.2 react-navigation</FormLabel>
         <FormLabel>- ^2.0.1 react-native-paper</FormLabel>

@@ -11,6 +11,9 @@
 
 import React from 'react';
 import ApolloContainer from './ApolloContainer';
+import SentryUtility from './sentry/SentryUtility';
+
+if (!__DEV__) SentryUtility.install();
 
 export default class App extends React.Component {
   render() {
