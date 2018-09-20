@@ -1,7 +1,4 @@
-Demonstrates how to use an Expo React-Native (CRNA) app with TypeScript, Redux, Redux-Persist, Jest and TSlint.
-
 [![Crossplatform](https://crossplatform.se/wp-content/uploads/2018/05/Crossplatform-Sweden-AB-01_web.jpg)](https://www.crossplatform.se/)  
-Copyright © Crossplatform Sweden AB
 
 <!-- language-all: javascript -->
 
@@ -12,91 +9,74 @@ This project was bootstrapped with [Create React Init](https://github.com/react-
 
 Below you'll find information about performing common tasks.
 
+---
+
+Always run **[`yarn dev`](#yarn-dev)** after pull / clone to install global dependencies
+
+---
 TODO: CI and coverage
-
----
-
-Always run **[`yarn dev`](#yarn-dev)** after pull / clone!
-
----
-
-> sudo chmod u+x ./\*\*.sh
 
 ## Table of Contents
 
 - [React-Native Init Boilerplate](#react-native-init-boilerplate)
-  - [Table of Contents](#table-of-contents)
-  - [React-Native 0.57.0](#react-native-0570)
-  - [Can not run ShellScript](#can-not-run-shellscript)
-  - [GraphQL Apollo implementation](#graphql-apollo-implementation)
+  * [Table of Contents](#table-of-contents)
+  * [React-Native 0.57.0](#react-native-0570)
+  * [Can not run ShellScript](#can-not-run-shellscript)
+  * [GraphQL Apollo implementation](#graphql-apollo-implementation)
 - [Project resources](#project-resources)
-  - [Insights Sentry](#insights-sentry)
-  - [Backlog & kanban](#backlog---kanban)
-  - [Build server and deploy: VS App Center](#build-server-and-deploy--vs-app-center)
-  - [Source Control: GitHub](#source-control--github)
+  * [Insights Sentry](#insights-sentry)
+  * [Backlog & kanban](#backlog---kanban)
+  * [Build server and deploy: VS App Center](#build-server-and-deploy--vs-app-center)
+  * [Source Control: GitHub](#source-control--github)
 - [Tools](#tools)
-  - [Java](#java)
-  - [Git](#git)
-    - [Git Credential Manager](#git-credential-manager)
-  - [Node](#node)
-  - [Yarn](#yarn)
-  - [Visual Studio Code](#visual-studio-code)
-  - [Bash on Windows](#bash-on-windows)
+  * [Java](#java)
+  * [Git](#git)
+    + [Git Credential Manager](#git-credential-manager)
+  * [Node](#node)
+  * [Yarn](#yarn)
+  * [Visual Studio Code](#visual-studio-code)
+  * [Bash on Windows](#bash-on-windows)
 - [Installation](#installation)
 - [Scripts](#scripts)
-  - [yarn dev](#yarn-dev)
-  - [yarn lint](#yarn-lint)
-  - [yarn build](#yarn-build)
-  - [yarn build-watch](#yarn-build-watch)
-  - [yarn start](#yarn-start)
-  - [yarn test-watch](#yarn-test-watch)
-  - [yarn test](#yarn-test)
-  - [yarn ios](#yarn-ios)
-  - [yarn android](#yarn-android)
+  * [yarn dev](#yarn-dev)
+  * [yarn lint](#yarn-lint)
+  * [yarn build](#yarn-build)
+  * [yarn build-watch](#yarn-build-watch)
+  * [yarn start](#yarn-start)
+  * [yarn test-watch](#yarn-test-watch)
+  * [yarn test](#yarn-test)
+  * [yarn ios](#yarn-ios)
+  * [yarn android](#yarn-android)
 - [Integrations](#integrations)
-  - [AppCenter](#appcenter)
-  - [Sentry](#sentry)
-    - [Organization short name](#organization-short-name)
-    - [Project short name](#project-short-name)
-    - [Project ID](#project-id)
-    - [DSN Public](#dsn-public)
-    - [CSP Endpoint](#csp-endpoint)
-    - [Public key](#public-key)
-    - [Auth token](#auth-token)
-  - [Google Maps](#google-maps)
-  - [Facebook](#facebook)
+  * [AppCenter](#appcenter)
+  * [Sentry](#sentry)
+    + [Organization short name](#organization-short-name)
+    + [Project short name](#project-short-name)
+    + [Project ID](#project-id)
 - [Delivery & Deployment](#delivery---deployment)
-  - [Google Web Client ID](#google-web-client-id)
-  - [Google OAuth Client ID](#google-oauth-client-id)
-  * [Android keystore](#android-keystore)
-    - [alias](#alias)
-    - [key](#key)
-    - [keyhash](#keyhash)
-    - [MD5](#md5)
-    - [SHA1](#sha1)
-    - [SHA256](#sha256)
-  * [iOS](#ios)
-    - [Google OAuth](#google-oauth)
-      - [Client ID](#client-id)
-      - [URL Scheme](#url-scheme)
+  * [URL Scheme](#url-scheme)
   * [Package name](#package-name)
+  * [Android Release Build](#android-release-build)
 - [Debugging](#debugging)
 - [Release](#release)
 - [Environment Variables](#environment-variables)
-  - [Configuring Packager IP Address](#configuring-packager-ip-address)
+  * [Configuring Packager IP Address](#configuring-packager-ip-address)
 - [Troubleshooting](#troubleshooting)
-  - [Networking](#networking)
-  - [iOS Simulator won't open](#ios-simulator-won-t-open)
+  * [Networking](#networking)
+  * [iOS Simulator won't open](#ios-simulator-won-t-open)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
+
 ## React-Native 0.57.0
 
-This project uses latest RN release by default, but to manually upgrade an existing project see release notes:
+This project uses latest RN release by default meaning latest metro bundler, babel 7 etc.
 
 ## Can not run ShellScript
 
 Adjust the rights on SH-files for your user (in root). Remarks: we use **[bash terminal in VS Code](#bash-on-windows)**
+
+> sudo chmod u+x ./\*\*.sh
 
 ## GraphQL Apollo implementation
 
@@ -131,11 +111,13 @@ https://sentry.io/crossplatform-sweden-ab/TODO/
 We use **version 8** of the Java JDK. On OSX, remove any older versions according to this process
 
 https://stackoverflow.com/questions/46770453/java-error-when-using-git-credential-manager-in-mac-on-osx
-brew cask remove java
-sudo rm -rf "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin"
-sudo rm -rf "/Library/PreferencePanes/JavaControlPanel.prefPane"
-sudo rm -rf "~/Library/Application Support/Oracle"
-sudo rm -rf "~/Library/Java"
+
+	brew cask remove java
+	sudo rm -rf "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin"
+	sudo rm -rf "/Library/PreferencePanes/JavaControlPanel.prefPane"
+	sudo rm -rf "~/Library/Application Support/Oracle"
+	sudo rm -rf "~/Library/Java"
+
 
 **[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)**
 
@@ -212,7 +194,7 @@ Install using **`yarn`** or **`npm install`**. The **`postinstall`** scripts wil
 **Always run after pull / clone!**
 
 - Installs global tools (npm packages, CLI tools)
-- Runs generate
+- Runs GraphQL generation
 - Cleans code using `yarn lint`
 
 ## yarn lint
@@ -246,6 +228,14 @@ Runs the [jest](https://github.com/facebook/jest) test runner on your tests in w
 ## yarn test
 
 Run tests as CI, not updating any snapshots. Run this before commit to ensure tests will work on build server.
+
+You can run CI style tests in respective folder using
+
+    yarn test
+
+But in development you would want to test and **update Jest snapshots** (**`--u`**):
+
+    yarn test-watch
 
 ## yarn ios
 
@@ -283,79 +273,13 @@ Like `npm start`, but also attempts to open your app on a connected Android devi
 
 > TODO
 
-### DSN Public
-
-> https://TODO@sentry.io/
-
-### CSP Endpoint
-
-> https://sentry.io/api/TODO
-
-### Public key
-
-> TODO
-
-### Auth token
-
-> TODO
-
-## Google Maps
-
-API Key:
-
-> TODO
-
-## Facebook
-
-App ID
-
-> TODO
 
 # Delivery & Deployment
+Don't put sensitive information here. Rather user something like
 
-### Google Web Client ID
+* **https://github.com/luggit/react-native-config**
 
-> 162798352168-ihe2vpfcl6bkn0g865erhgh83r47fkoi.apps.googleusercontent.com
-
-### Google OAuth Client ID
-
-> 162798352168-8lprbht4d1m43qqlkk8g18qim1o49ik7.apps.googleusercontent.com
-
-## Android keystore
-
-### alias
-
-> TODO
-
-### key
-
-> TODO
-
-### keyhash
-
-> TODO =
-
-### MD5
-
-> TODO
-
-### SHA1
-
-> TODO
-
-### SHA256
-
-> TODO
-
-## iOS
-
-### Google OAuth
-
-#### Client ID
-
-> TODO
-
-#### URL Scheme
+## URL Scheme
 
 > TODO
 
@@ -363,13 +287,14 @@ App ID
 
 > TODO
 
-You can run CI style tests in respective folder using
+## Android Release Build
+Assuming keystore is set up **[according to documentation](https://facebook.github.io/react-native/docs/signed-apk-android)** you can use the following command:
 
-    yarn test
+> yarn android-build
 
-But in development you would want to test and **update Jest snapshots** (**`--u`**):
+If there are errors, try the full insights:
 
-    yarn test-watch
+> yarn android-build-debug
 
 # Debugging
 
