@@ -14,7 +14,10 @@ Below you'll find information about performing common tasks.
 Always run **[`yarn dev`](#yarn-dev)** after pull / clone to install global dependencies
 
 ---
-TODO: CI and coverage
+[![Build status](https://crossplatformsweden.visualstudio.com/ParkeraApp/_apis/build/status/GitHubInitBoilerplate-CI)](https://crossplatformsweden.visualstudio.com/ParkeraApp/_build/latest?definitionId=-1)
+[![codecov](https://codecov.io/gh/crossplatformsweden/react-native-init-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/crossplatformsweden/react-native-init-boilerplate)
+[![dependencies Status](https://david-dm.org/crossplatformsweden/react-native-init-boilerplate/status.svg)](https://david-dm.org/crossplatformsweden/react-native-init-boilerplate)
+[![Prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 ## Table of Contents
 
@@ -89,8 +92,10 @@ Learn more about our implementation:
 # Project resources
 
 ## Insights Sentry
+Application insights / bug reporting:
 
-https://sentry.io/crossplatform-sweden-ab/TODO/
+* **https://github.com/getsentry/react-native-sentry**
+
 
 ## Backlog & kanban
 

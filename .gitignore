@@ -121,6 +121,7 @@ node_modules
 /third-party
 /.vscode
 *.apk
+.nyc_output
 
 **/__generated__/**
 
