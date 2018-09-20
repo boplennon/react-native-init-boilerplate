@@ -9,7 +9,7 @@
     "lint": "./lint.sh",
     "clean": "rm -rf build",
     "install-globals": "yarn global add create-react-native-app react-native-cli typescript tslint prettier codecov nyc",
-    "codecov-generate": "nyc npm test && nyc check-coverage && nyc report --reporter=json > coverage/coverage.json",
+    "codecov-generate": "./createCoverageDir.sh && nyc npm test && nyc check-coverage && nyc report --reporter=json > coverage/coverage.json",
     "android-run": "react-native run-android",
     "android-run-release": "react-native run-android --variant=release",
     "android-release": "yarn android-reverse && yarn android-run-release",
