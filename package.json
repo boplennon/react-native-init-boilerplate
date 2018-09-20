@@ -52,6 +52,7 @@
     "react-apollo": "^2.1.11",
     "react-native": "0.57.0",
     "react-native-elements": "^0.19.1",
+    "react-native-maps": "^0.21.0",
     "react-native-paper": "^2.0.1",
     "react-native-vector-icons": "^5.0.0",
     "react-navigation": "^2.14.2",
@@ -81,10 +82,10 @@
     "ts-jest": "^23.1.4",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
-    "tslint-plugin-prettier": "^2.0.0",
-    "typescript": "^3.0.3",
     "tslint-eslint-rules": "^5.4.0",
-    "tslint-react": "^3.6.0"
+    "tslint-plugin-prettier": "^2.0.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.0.3"
   },
   "husky": {
     "hooks": {

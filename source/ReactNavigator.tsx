@@ -15,6 +15,7 @@ const tabBarOptions: TabConfig = {
   activeTintColor: Colors.CrossYellow,
   barStyle: { backgroundColor: Colors.CrossLightBlue },
   inactiveTintColor: Colors.CrossDarkBlue,
+  initialRouteName: 'Map'
 };
 
 /**

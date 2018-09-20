@@ -253,7 +253,9 @@ There's a couple of scripts that runs a specific device:
 
 ## yarn android
 
-Like `npm start`, but also attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools (see [React Native docs](https://facebook.github.io/react-native/docs/getting-started.html) for detailed setup). We also recommend installing Genymotion as your Android emulator. Once you've finished setting up the native build environment, there are two options for making the right copy of `adb` available to Create React Native App:
+Like `npm start`, but also attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools (see [React Native docs](https://facebook.github.io/react-native/docs/getting-started.html) for detailed setup).
+
+ * **[Android Release Build](#android-release-build)**
 
 # Integrations
 
@@ -288,7 +290,12 @@ Don't put sensitive information here. Rather user something like
 > TODO
 
 ## Android Release Build
-Assuming keystore is set up **[according to documentation](https://facebook.github.io/react-native/docs/signed-apk-android)** you can use the following command:
+Assuming keystore is set up **[according to documentation](https://facebook.github.io/react-native/docs/signed-apk-android)** you can use the following commands.
+
+### Gradle configuration used:
+https://github.com/react-community/react-native-maps/issues/2188#issuecomment-418585832
+
+### Scripts
 
 > yarn android-build
 

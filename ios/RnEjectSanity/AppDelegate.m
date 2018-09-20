@@ -9,13 +9,15 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // add the api key obtained from Google Console
-  // [GMSServices provideAPIKey:@"AIzaSyARKWAxjv22kKCxPrGtg8TDu-BqsfUoags"];
+  // TODO: Read from app config
+  [GMSServices provideAPIKey:@"AIzaSyB5qikpWAbnCkXj34rbM_hgC43wdt2440A"];
   
   NSURL *jsCodeLocation;
 

@@ -3,11 +3,9 @@ Copyright © Crossplatform Sweden AB
 
 <!-- language-all: javascript -->
 
-# ParkeraApp
+# React-Native Init Boilerplate
 
 iOS and Android test version deplpoyed through VSTS and Microsoft App Center.
-
-**Remarks:** Currently expects backend on "localhost" so it will not work on device.
 
 ## Build status
 
@@ -19,10 +17,6 @@ TODO
 
 - **[Apollo implementation](https://github.com/crossplatformsweden/react-native-init-boilerplate/blob/master/Apollo.md)**
 
-# Internal testing features
-
-- Map component
-- Profile component
 
 # Roadmap
 
@@ -31,24 +25,18 @@ TODO
 
 # Project resources
 
-## Mock
+## Insights Sentry
 
-TODO
-
-## Sentry
-
-TODO
+https://sentry.io/crossplatform-sweden-ab/TODO/
 
 ## Backlog & kanban
 
-- [Specification](/Project-resources/Specification)
-- [VSTS Crossplatform](https://crossplatformsweden.visualstudio.com/ParkeraApp/)
+- **[GitHub Crossplatform](https://github.com/crossplatformsweden/react-native-init-boilerplate/projects)**
 
 ## Build server and deploy: VS App Center
 
-- [iOS](https://appcenter.ms/orgs/Crossplatform-Sweden-AB/apps/ParkeraApp.iOS/)
-- [Android](https://appcenter.ms/orgs/Crossplatform-Sweden-AB/apps/ParkeraApp.Android/)
+- **TODO**
 
-## Source Control: VSTS
+## Source Control: GitHub
 
-- [Crossplatform](https://crossplatformsweden.visualstudio.com/ParkeraApp/_git/ParkeraApp.React/) (private repo)
+- **[crossplatformsweden/react-native-init-boilerplate](https://github.com/crossplatformsweden/react-native-init-boilerplate.git)**

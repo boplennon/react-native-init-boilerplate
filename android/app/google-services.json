@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "912088953703",
+    "firebase_url": "https://rninitboilerplat-1537429888155.firebaseio.com",
+    "project_id": "rninitboilerplat-1537429888155",
+    "storage_bucket": "rninitboilerplat-1537429888155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912088953703:android:053f36c62899203d",
+        "android_client_info": {
+          "package_name": "com.rnejectsanity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912088953703-c7r4g9sbbsie6l5j760tqt8pvjkbrhg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_GtmUweuInWCKhManO79pu3x9027qCD8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

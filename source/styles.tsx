@@ -181,7 +181,6 @@ export const styles = StyleSheet.create({
     backgroundColor: Colors.CrossLightBlue,
   },
   tabBarTitle: {
-    color: 'green',
     alignSelf: 'center',
   },
   tabBarLabel: {
