@@ -28,13 +28,13 @@ export const HomeScreen: CrossTabStatelessComponent = () => (
       </View>
     </ScrollView>
     <FormLabel>Basic icon and one from Elements</FormLabel>
-    <FontAwesome name="map-o" color="blue" size={48} />
-    <Icon type="font-awesome" color="purple" name="user-o" size={48} />
+    <FontAwesome name='map-o' color='blue' size={48} />
+    <Icon type='font-awesome' color='purple' name='user-o' size={48} />
   </View>
 );
 
 HomeScreen.navigationOptions = {
-  tabBarIcon: <FontAwesome name="home" size={TabIconSize} color="white" />,
+  tabBarIcon: <FontAwesome name='home' size={TabIconSize} color='white' />,
   tabBarLabel: <Text style={styles.tabBarLabel}>Home</Text>,
 };
 

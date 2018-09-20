@@ -1,11 +1,11 @@
 import { Platform } from 'react-native';
 import {
   NavigationBottomTabScreenOptions,
-  NavigationRouteConfigMap,
+  NavigationRouteConfigMap
 } from 'react-navigation';
 import {
   createMaterialBottomTabNavigator,
-  TabConfig,
+  TabConfig
 } from 'react-navigation-material-bottom-tabs';
 import { HomeScreen } from './home/HomeScreen';
 import { MapScreen } from './map/MapScreen';

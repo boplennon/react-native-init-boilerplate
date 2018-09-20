@@ -143,7 +143,7 @@ sudo rm -rf "~/Library/Java"
 
 We're using latest stable. Install the version for your OS from:
 
-**[https://git-scm.com/downloads](https://git-scm.com/downloads "Download Git")**
+**[https://git-scm.com/downloads](https://git-scm.com/downloads 'Download Git')**
 
 ### Git Credential Manager
 

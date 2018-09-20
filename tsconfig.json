@@ -64,5 +64,11 @@
   "typeAcquisition": {
     "enable": false
   },
-  "exclude": ["android", "ios", "build", "node_modules/**/*", "source/**/*.test.*"]
+  "exclude": [
+    "android",
+    "ios",
+    "build",
+    "node_modules/**/*",
+    "source/**/*.test.*"
+  ]
 }

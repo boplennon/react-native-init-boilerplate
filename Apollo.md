@@ -52,10 +52,10 @@ Implementation of GraphQL Apollo Client using **TypeScript**.
 
 # Background
 
-As most React (Native) projects we handled our global **state** using the **[Redux](https://redux.js.org "Official documentation")** framework. While this gave us a global store where all the apps state data was available it required a whole lot of "boilerplate" code and required a lot of work to achieve very little.
+As most React (Native) projects we handled our global **state** using the **[Redux](https://redux.js.org 'Official documentation')** framework. While this gave us a global store where all the apps state data was available it required a whole lot of "boilerplate" code and required a lot of work to achieve very little.
 
-Enter **[GraphQL](https://graphql.org/ "Official documentation")**; initially a solution for our backend to simplify writing endpoints (i.e REST) in a modern way (created by Facebook).  
-However, to call the GraphQL API from client there is the **[Apollo library](https://www.learnapollo.com/introduction/get-started "Getting started with Apollo")**, supported by React and React-Native since it has no platform specific requirements other than **fetch**.
+Enter **[GraphQL](https://graphql.org/ 'Official documentation')**; initially a solution for our backend to simplify writing endpoints (i.e REST) in a modern way (created by Facebook).  
+However, to call the GraphQL API from client there is the **[Apollo library](https://www.learnapollo.com/introduction/get-started 'Getting started with Apollo')**, supported by React and React-Native since it has no platform specific requirements other than **fetch**.
 
 Apollo itself was initially designed to handle requests to GraphQL API:s. But it also supports _local state_ like Redux. In fact it initially used Redux, but eventually abandonned it since there was no need to complicate things when Apollo could basically replace Redux's state management.
 
@@ -65,7 +65,7 @@ This is why we decided to remove Redux entirely and re-build using Apollo and Gr
 
 Our mobile project(s) now use `<ApolloProvider>` as root element and then wrap our navigator. The provider handles the state (in cache), errors, and GraphQL client for calling the backend.
 
-- **[React Apollo tutorial](https://www.robinwieruch.de/react-apollo-client-example/ "A minimal example by Robin Wieruch")**
+- **[React Apollo tutorial](https://www.robinwieruch.de/react-apollo-client-example/ 'A minimal example by Robin Wieruch')**
 
 We standarlized this to the **`ApolloClientBase.tsx`** higher order component, that can be reused in any project. It allows you to provide backend uri, initial state in cache, resolvers etc in it's constructor, as seen in our **`AppContainer.tsx`** file:
 
@@ -540,7 +540,7 @@ Ensure you've exported a **pure** React component like GoogleLoginPure
             />);
     };
 
-You can then import the pure component to your Jest test and create a shallow wrapper using **[Enzyme](https://github.com/airbnb/enzyme "Enzyme documentation")**:
+You can then import the pure component to your Jest test and create a shallow wrapper using **[Enzyme](https://github.com/airbnb/enzyme 'Enzyme documentation')**:
 
     // login/componets/GoogleLoginComponent.test.tsx
     import React from 'react';
@@ -557,7 +557,7 @@ You can then import the pure component to your Jest test and create a shallow wr
       return { enzymeWrapper };
     }
 
-Using this wrapper we can then proceed to test properties and functions using **[Enzyme](https://github.com/airbnb/enzyme "Enzyme documentation")**:
+Using this wrapper we can then proceed to test properties and functions using **[Enzyme](https://github.com/airbnb/enzyme 'Enzyme documentation')**:
 
     // login/componets/GoogleLoginComponent.test.tsx
     describe('components', () => {
@@ -587,7 +587,7 @@ Using this wrapper we can then proceed to test properties and functions using **
       });
     });
 
-Proceed to write small tests that evaluate the different scenarios for the component; **[negative result](https://smartbear.com/learn/automated-testing/negative-testing/ "Testing negative result")**, conditional rendering based on props values etc.
+Proceed to write small tests that evaluate the different scenarios for the component; **[negative result](https://smartbear.com/learn/automated-testing/negative-testing/ 'Testing negative result')**, conditional rendering based on props values etc.
 
 ## Testing resolver functions
 
@@ -640,7 +640,7 @@ Which then can be used for the cache argument to the resolver:
       })
     });
 
-You could also test **[negative result](https://smartbear.com/learn/automated-testing/negative-testing/ "Testing negative result")** to ensure these are also handled correctly.
+You could also test **[negative result](https://smartbear.com/learn/automated-testing/negative-testing/ 'Testing negative result')** to ensure these are also handled correctly.
 
 We leave out **`try / catch`** for both good practise and also Apollo will return these to our components in the **`error`** parameter.
 

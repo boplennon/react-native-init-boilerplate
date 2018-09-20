@@ -1,8 +1,5 @@
 #!/bin/bash
 echo "**** Formating Code *******"
-echo "****** Prettier - TS ******"
-prettier **/*.ts --write
-prettier **/*.tsx --write
 echo "****** Prettier - JSON ******"
 prettier **/*.json --write
 # enable if there's yml 

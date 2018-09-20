@@ -1,7 +1,7 @@
 // map/reducers/index
 // @ts-ignore
-import _ from "lodash";
-import * as types from "./types";
+import _ from 'lodash';
+import * as types from './types';
 
 export interface IFitToCoordOptions {
   edgePadding: types.IEdgePadding;
@@ -49,7 +49,7 @@ class MapService {
   setMap(mapInstance: any) {
     if (mapInstance) {
       this.map = mapInstance;
-      console.log("** MapService got instance **");
+      console.log('** MapService got instance **');
       console.log(mapInstance);
     }
   }
@@ -92,7 +92,7 @@ class MapService {
       longitude: Number(coordinate.longitude),
     };
 
-    console.log("** MapService: goToCoordinate **");
+    console.log('** MapService: goToCoordinate **');
     console.log(targetCoords);
     this.map.animateToCoordinate(targetCoords, 2000);
   }
@@ -112,7 +112,7 @@ class MapService {
       return;
     }
 
-    console.log("** MapService: GoToAngle " + angle + " **");
+    console.log('** MapService: GoToAngle ' + angle + ' **');
     this.map.animateToViewingAngle(angle, duration);
   }
 
@@ -131,7 +131,7 @@ class MapService {
       return;
     }
 
-    console.log("** MapService: goToBearing " + bearing + " **");
+    console.log('** MapService: goToBearing ' + bearing + ' **');
     setTimeout(this.map.animateToBearing(bearing, duration), 10);
   }
 
@@ -148,7 +148,7 @@ class MapService {
       return;
     }
 
-    console.log("** MapService: fitToCoordinates **");
+    console.log('** MapService: fitToCoordinates **');
     this.map.fitToCoordinates(coordinates, options);
   }
 
@@ -168,7 +168,7 @@ class MapService {
     this.isOnUserLocation = false;
 
     try {
-      if (!_.get(userLocation, ["latitude"], false)) {
+      if (!_.get(userLocation, ['latitude'], false)) {
         return;
       }
 
@@ -256,7 +256,7 @@ class MapService {
     } finally {
       // this.setState({ isBusy: false });
     }
-  };
+  }
 
   /**
    * Instance of React-Native Map
