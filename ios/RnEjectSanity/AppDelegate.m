@@ -15,6 +15,7 @@
 #import "RNSentry.h" // This is used for versions of react < 0.40
 #endif
 #import <GoogleMaps/GoogleMaps.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @implementation AppDelegate
 
@@ -23,6 +24,11 @@
   // add the api key obtained from Google Console
   // TODO: Read from app config
   [GMSServices provideAPIKey:@"AIzaSyB5qikpWAbnCkXj34rbM_hgC43wdt2440A"];
+  
+  // Facebook SDK
+  // https://developers.facebook.com/docs/ios/getting-started/
+  [[FBSDKApplicationDelegate sharedInstance] application:application
+                           didFinishLaunchingWithOptions:launchOptions];
   
   NSURL *jsCodeLocation;
 
@@ -42,6 +48,26 @@ RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
+}
+
+// Facebook SDK - handle deep linking
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+  
+  BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                                openURL:url
+                                                      sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                                                             annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
+                  ];
+  // Add any custom logic here.
+  return handled;
+}
+
+// Facebook SDK: log app launches
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+  [FBSDKAppEvents activateApp];
 }
 
 @end

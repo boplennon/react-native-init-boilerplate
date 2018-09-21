@@ -89,6 +89,7 @@ export const styles = StyleSheet.create({
   button: {
     marginTop: 10,
     marginRight: 10,
+    marginBottom: 10,
     height: 45,
   },
   paddingDefault: {

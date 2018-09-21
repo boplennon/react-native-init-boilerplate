@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { ScrollView, Text, View } from 'react-native';
-import { FormLabel, Icon } from 'react-native-elements';
+import { FormLabel } from 'react-native-elements';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { CrossTabStatelessComponent } from '../ReactNavigator';
 import styles, { TabIconSize } from '../styles';
+import { CrossFbLoginButton } from '../facebook/CrossFbLoginButton';
 
 export const HomeScreen: CrossTabStatelessComponent = () => (
   <View style={styles.container}>
@@ -26,11 +27,10 @@ export const HomeScreen: CrossTabStatelessComponent = () => (
         <FormLabel>- 14.0.2 graphql</FormLabel>
         <FormLabel>- 0.1.16 apollo-boost</FormLabel>
         <FormLabel>- 1.1.1 aws-amplify</FormLabel>
+        <FormLabel>- 0.8.0 react-native-fbsdk</FormLabel>
       </View>
     </ScrollView>
-    <FormLabel>Basic icon and one from Elements</FormLabel>
-    <FontAwesome name='map-o' color='blue' size={48} />
-    <Icon type='font-awesome' color='purple' name='user-o' size={48} />
+    <CrossFbLoginButton />
   </View>
 );
 

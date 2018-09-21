@@ -71,22 +71,12 @@ ShallowWrapper {
             <UNDEFINED>
               - 1.1.1 aws-amplify
             </UNDEFINED>
+            <UNDEFINED>
+              - 0.8.0 react-native-fbsdk
+            </UNDEFINED>
           </UNDEFINED>
         </UNDEFINED>,
-        <UNDEFINED>
-          Basic icon and one from Elements
-        </UNDEFINED>,
-        <UNDEFINED
-          color="blue"
-          name="map-o"
-          size={48}
-        />,
-        <UNDEFINED
-          color="purple"
-          name="user-o"
-          size={48}
-          type="font-awesome"
-        />,
+        <Unknown />,
       ],
       "style": Object {
         "flex": 1,
@@ -171,6 +161,9 @@ ShallowWrapper {
             <UNDEFINED>
               - 1.1.1 aws-amplify
             </UNDEFINED>
+            <UNDEFINED>
+              - 0.8.0 react-native-fbsdk
+            </UNDEFINED>
           </UNDEFINED>,
         },
         "ref": null,
@@ -224,6 +217,9 @@ ShallowWrapper {
               </UNDEFINED>,
               <UNDEFINED>
                 - 1.1.1 aws-amplify
+              </UNDEFINED>,
+              <UNDEFINED>
+                - 0.8.0 react-native-fbsdk
               </UNDEFINED>,
             ],
           },
@@ -394,6 +390,17 @@ ShallowWrapper {
               "rendered": "- 1.1.1 aws-amplify",
               "type": undefined,
             },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "- 0.8.0 react-native-fbsdk",
+              },
+              "ref": null,
+              "rendered": "- 0.8.0 react-native-fbsdk",
+              "type": undefined,
+            },
           ],
           "type": undefined,
         },
@@ -403,45 +410,10 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {
-          "children": "Basic icon and one from Elements",
-        },
-        "ref": null,
-        "rendered": "Basic icon and one from Elements",
-        "type": undefined,
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "color": "blue",
-          "name": "map-o",
-          "size": 48,
-        },
+        "props": Object {},
         "ref": null,
         "rendered": null,
-        "type": Object {
-          "Button": "View",
-          "TabBarItem": "View",
-          "TabBarItemIOS": "View",
-          "ToolbarAndroid": "View",
-          "getImageSource": "View",
-        },
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "color": "purple",
-          "name": "user-o",
-          "size": 48,
-          "type": "font-awesome",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": undefined,
+        "type": [Function],
       },
     ],
     "type": undefined,
@@ -506,22 +478,12 @@ ShallowWrapper {
               <UNDEFINED>
                 - 1.1.1 aws-amplify
               </UNDEFINED>
+              <UNDEFINED>
+                - 0.8.0 react-native-fbsdk
+              </UNDEFINED>
             </UNDEFINED>
           </UNDEFINED>,
-          <UNDEFINED>
-            Basic icon and one from Elements
-          </UNDEFINED>,
-          <UNDEFINED
-            color="blue"
-            name="map-o"
-            size={48}
-          />,
-          <UNDEFINED
-            color="purple"
-            name="user-o"
-            size={48}
-            type="font-awesome"
-          />,
+          <Unknown />,
         ],
         "style": Object {
           "flex": 1,
@@ -606,6 +568,9 @@ ShallowWrapper {
               <UNDEFINED>
                 - 1.1.1 aws-amplify
               </UNDEFINED>
+              <UNDEFINED>
+                - 0.8.0 react-native-fbsdk
+              </UNDEFINED>
             </UNDEFINED>,
           },
           "ref": null,
@@ -659,6 +624,9 @@ ShallowWrapper {
                 </UNDEFINED>,
                 <UNDEFINED>
                   - 1.1.1 aws-amplify
+                </UNDEFINED>,
+                <UNDEFINED>
+                  - 0.8.0 react-native-fbsdk
                 </UNDEFINED>,
               ],
             },
@@ -829,6 +797,17 @@ ShallowWrapper {
                 "rendered": "- 1.1.1 aws-amplify",
                 "type": undefined,
               },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "- 0.8.0 react-native-fbsdk",
+                },
+                "ref": null,
+                "rendered": "- 0.8.0 react-native-fbsdk",
+                "type": undefined,
+              },
             ],
             "type": undefined,
           },
@@ -838,45 +817,10 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {
-            "children": "Basic icon and one from Elements",
-          },
-          "ref": null,
-          "rendered": "Basic icon and one from Elements",
-          "type": undefined,
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "color": "blue",
-            "name": "map-o",
-            "size": 48,
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
-          "type": Object {
-            "Button": "View",
-            "TabBarItem": "View",
-            "TabBarItemIOS": "View",
-            "ToolbarAndroid": "View",
-            "getImageSource": "View",
-          },
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "color": "purple",
-            "name": "user-o",
-            "size": 48,
-            "type": "font-awesome",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": undefined,
+          "type": [Function],
         },
       ],
       "type": undefined,

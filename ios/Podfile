@@ -42,7 +42,16 @@ target 'RnEjectSanity' do
   pod 'GoogleMaps'  # Remove this line if you don't want to support GoogleMaps on iOS
   pod 'Google-Maps-iOS-Utils' # Remove this line if you don't want to support GoogleMaps on iOS
 
+  # Sentry
   pod 'SentryReactNative', :path => '../node_modules/react-native-sentry'
+  
+  # Facebook SDK
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKPlacesKit'
+  pod 'FBSDKMessengerShareKit'
+  pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
 
   target 'RnEjectSanityTests' do
     inherit! :search_paths

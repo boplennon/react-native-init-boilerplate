@@ -21,7 +21,9 @@
     "android-build-scan": "yarn killbin && yarn android-clean && yarn android-release-fix && yarn android-bundle && cd android && ./gradlew assembleRelease -x bundleReleaseJsAndAssets --full-stacktrace --scan",
     "android-build-debug": "yarn killbin && yarn android-clean && yarn android-release-fix && yarn android-bundle && cd android && ./gradlew assembleRelease -x bundleReleaseJsAndAssets --full-stacktrace --debug",
     "android-clean": "cd android && ./gradlew clean",
+    "android-debug-keystore": "keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64",
     "killbin": "rm -rf ./node_modules/.bin",
+    "pod-install": "cd ios && pod install",
     "ios": "react-native run-ios --simulator=\"iPhone 7\"",
     "ios6": "react-native run-ios --simulator=\"iPhone 6\"",
     "ios8": "react-native run-ios --simulator=\"iPhone 8\"",
@@ -35,7 +37,7 @@
     "build": "tsc",
     "build-watch": "tsc --watch",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
-    "dev": "yarn install && yarn install-globals && yarn lint && yarn build"
+    "dev": "yarn install && yarn install-globals && pod-install && yarn lint && yarn build"
   },
   "dependencies": {
     "@mapbox/react-native-mapbox-gl": "^6.1.3",
@@ -54,6 +56,7 @@
     "react-apollo": "^2.1.11",
     "react-native": "0.57.0",
     "react-native-elements": "^0.19.1",
+    "react-native-fbsdk": "^0.8.0",
     "react-native-maps": "^0.21.0",
     "react-native-paper": "^2.0.1",
     "react-native-sentry": "^0.39.0",
@@ -69,6 +72,7 @@
     "@types/mapbox-gl": "^0.48.0",
     "@types/react": "^16.4.14",
     "@types/react-native": "^0.56.21",
+    "@types/react-native-fbsdk": "^0.6.2",
     "@types/react-native-vector-icons": "^4.6.3",
     "@types/react-navigation": "^2.0.21",
     "@types/react-navigation-material-bottom-tabs": "^0.3.0",

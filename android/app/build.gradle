@@ -139,7 +139,8 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-sentry')
+    implementation(project(':react-native-fbsdk'))
+    implementation(project(':react-native-sentry'))
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
     implementation "com.facebook.react:react-native:+"  // From node_modules
