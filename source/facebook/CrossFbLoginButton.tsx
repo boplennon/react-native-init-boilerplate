@@ -4,7 +4,7 @@ import styles from '../styles';
 
 /**
  * Uses the nativly linked Facebook SDK to log in
- * 
+ *
  * https://github.com/facebook/react-native-fbsdk
  */
 export const CrossFbLoginButton = () => (

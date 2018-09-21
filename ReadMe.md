@@ -1,4 +1,4 @@
-[![Crossplatform](https://crossplatform.se/wp-content/uploads/2018/05/Crossplatform-Sweden-AB-01_web.jpg)](https://www.crossplatform.se/)  
+[![Crossplatform](https://crossplatform.se/wp-content/uploads/2018/05/Crossplatform-Sweden-AB-01_web.jpg)](https://www.crossplatform.se/)
 
 <!-- language-all: javascript -->
 
@@ -14,6 +14,7 @@ Below you'll find information about performing common tasks.
 Always run **[`yarn dev`](#yarn-dev)** after pull / clone to install global dependencies
 
 ---
+
 [![Build status](https://crossplatformsweden.visualstudio.com/ParkeraApp/_apis/build/status/GitHubInitBoilerplate-CI)](https://crossplatformsweden.visualstudio.com/ParkeraApp/_build/latest?definitionId=-1)
 [![codecov](https://codecov.io/gh/crossplatformsweden/react-native-init-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/crossplatformsweden/react-native-init-boilerplate)
 [![dependencies Status](https://david-dm.org/crossplatformsweden/react-native-init-boilerplate/status.svg)](https://david-dm.org/crossplatformsweden/react-native-init-boilerplate)
@@ -22,54 +23,53 @@ Always run **[`yarn dev`](#yarn-dev)** after pull / clone to install global depe
 ## Table of Contents
 
 - [React-Native Init Boilerplate](#react-native-init-boilerplate)
-  * [Table of Contents](#table-of-contents)
-  * [React-Native 0.57.0](#react-native-0570)
-  * [Can not run ShellScript](#can-not-run-shellscript)
-  * [GraphQL Apollo implementation](#graphql-apollo-implementation)
+  - [Table of Contents](#table-of-contents)
+  - [React-Native 0.57.0](#react-native-0570)
+  - [Can not run ShellScript](#can-not-run-shellscript)
+  - [GraphQL Apollo implementation](#graphql-apollo-implementation)
 - [Project resources](#project-resources)
-  * [Insights Sentry](#insights-sentry)
-  * [Backlog & kanban](#backlog---kanban)
-  * [Build server and deploy: VS App Center](#build-server-and-deploy--vs-app-center)
-  * [Source Control: GitHub](#source-control--github)
+  - [Insights Sentry](#insights-sentry)
+  - [Backlog & kanban](#backlog---kanban)
+  - [Build server and deploy: VS App Center](#build-server-and-deploy--vs-app-center)
+  - [Source Control: GitHub](#source-control--github)
 - [Tools](#tools)
-  * [Java](#java)
-  * [Git](#git)
-    + [Git Credential Manager](#git-credential-manager)
-  * [Node](#node)
-  * [Yarn](#yarn)
-  * [Visual Studio Code](#visual-studio-code)
-  * [Bash on Windows](#bash-on-windows)
+  - [Java](#java)
+  - [Git](#git)
+    - [Git Credential Manager](#git-credential-manager)
+  - [Node](#node)
+  - [Yarn](#yarn)
+  - [Visual Studio Code](#visual-studio-code)
+  - [Bash on Windows](#bash-on-windows)
 - [Installation](#installation)
 - [Scripts](#scripts)
-  * [yarn dev](#yarn-dev)
-  * [yarn lint](#yarn-lint)
-  * [yarn build](#yarn-build)
-  * [yarn build-watch](#yarn-build-watch)
-  * [yarn start](#yarn-start)
-  * [yarn test-watch](#yarn-test-watch)
-  * [yarn test](#yarn-test)
-  * [yarn ios](#yarn-ios)
-  * [yarn android](#yarn-android)
+  - [yarn dev](#yarn-dev)
+  - [yarn lint](#yarn-lint)
+  - [yarn build](#yarn-build)
+  - [yarn build-watch](#yarn-build-watch)
+  - [yarn start](#yarn-start)
+  - [yarn test-watch](#yarn-test-watch)
+  - [yarn test](#yarn-test)
+  - [yarn ios](#yarn-ios)
+  - [yarn android](#yarn-android)
 - [Integrations](#integrations)
-  * [AppCenter](#appcenter)
-  * [Sentry](#sentry)
-    + [Organization short name](#organization-short-name)
-    + [Project short name](#project-short-name)
-    + [Project ID](#project-id)
+  - [AppCenter](#appcenter)
+  - [Sentry](#sentry)
+    - [Organization short name](#organization-short-name)
+    - [Project short name](#project-short-name)
+    - [Project ID](#project-id)
 - [Delivery & Deployment](#delivery---deployment)
-  * [URL Scheme](#url-scheme)
-  * [Package name](#package-name)
-  * [Android Release Build](#android-release-build)
+  - [URL Scheme](#url-scheme)
+  - [Package name](#package-name)
+  - [Android Release Build](#android-release-build)
 - [Debugging](#debugging)
 - [Release](#release)
 - [Environment Variables](#environment-variables)
-  * [Configuring Packager IP Address](#configuring-packager-ip-address)
+  - [Configuring Packager IP Address](#configuring-packager-ip-address)
 - [Troubleshooting](#troubleshooting)
-  * [Networking](#networking)
-  * [iOS Simulator won't open](#ios-simulator-won-t-open)
+  - [Networking](#networking)
+  - [iOS Simulator won't open](#ios-simulator-won-t-open)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 ## React-Native 0.57.0
 
@@ -92,10 +92,10 @@ Learn more about our implementation:
 # Project resources
 
 ## Insights Sentry
+
 Application insights / bug reporting:
 
-* **https://github.com/getsentry/react-native-sentry**
-
+- **https://github.com/getsentry/react-native-sentry**
 
 ## Backlog & kanban
 
@@ -117,12 +117,11 @@ We use **version 8** of the Java JDK. On OSX, remove any older versions accordin
 
 https://stackoverflow.com/questions/46770453/java-error-when-using-git-credential-manager-in-mac-on-osx
 
-	brew cask remove java
-	sudo rm -rf "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin"
-	sudo rm -rf "/Library/PreferencePanes/JavaControlPanel.prefPane"
-	sudo rm -rf "~/Library/Application Support/Oracle"
-	sudo rm -rf "~/Library/Java"
-
+    brew cask remove java
+    sudo rm -rf "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin"
+    sudo rm -rf "/Library/PreferencePanes/JavaControlPanel.prefPane"
+    sudo rm -rf "~/Library/Application Support/Oracle"
+    sudo rm -rf "~/Library/Java"
 
 **[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)**
 
@@ -260,7 +259,7 @@ There's a couple of scripts that runs a specific device:
 
 Like `npm start`, but also attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools (see [React Native docs](https://facebook.github.io/react-native/docs/getting-started.html) for detailed setup).
 
- * **[Android Release Build](#android-release-build)**
+- **[Android Release Build](#android-release-build)**
 
 # Integrations
 
@@ -280,11 +279,11 @@ Like `npm start`, but also attempts to open your app on a connected Android devi
 
 > TODO
 
-
 # Delivery & Deployment
+
 Don't put sensitive information here. Rather user something like
 
-* **https://github.com/luggit/react-native-config**
+- **https://github.com/luggit/react-native-config**
 
 ## URL Scheme
 
@@ -295,9 +294,11 @@ Don't put sensitive information here. Rather user something like
 > TODO
 
 ## Android Release Build
+
 Assuming keystore is set up **[according to documentation](https://facebook.github.io/react-native/docs/signed-apk-android)** you can use the following commands.
 
 ### Gradle configuration used:
+
 https://github.com/react-community/react-native-maps/issues/2188#issuecomment-418585832
 
 ### Scripts

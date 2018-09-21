@@ -17,7 +17,6 @@ TODO
 
 - **[Apollo implementation](https://github.com/crossplatformsweden/react-native-init-boilerplate/blob/master/Apollo.md)**
 
-
 # Roadmap
 
 - Implement authentication

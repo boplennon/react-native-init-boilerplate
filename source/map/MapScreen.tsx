@@ -50,7 +50,7 @@ export class MapScreen extends React.Component<IProps, IState> {
     this.goToUserLocation = this.goToUserLocation.bind(this);
   }
   static navigationOptions: NavigationBottomTabScreenOptions = {
-    tabBarIcon: <FontAwesome name="map-o" size={TabIconSize} color="white" />,
+    tabBarIcon: <FontAwesome name='map-o' size={TabIconSize} color='white' />,
     tabBarLabel: <Text style={styles.tabBarLabel}>Map</Text>,
   };
 

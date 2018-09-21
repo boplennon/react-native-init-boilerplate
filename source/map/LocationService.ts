@@ -93,7 +93,7 @@ class LocationServiceImplementation {
     };
 
     return location;
-  };
+  }
 
   getCurrentLocation = (): Promise<ILatLng> => {
     return new Promise<ILatLng>((resolve) => {
@@ -114,7 +114,7 @@ class LocationServiceImplementation {
         }
       );
     });
-  };
+  }
 }
 
 const LocationService = new LocationServiceImplementation();
