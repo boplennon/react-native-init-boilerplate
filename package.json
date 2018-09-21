@@ -8,8 +8,7 @@
     "tsw": "tsc --watch",
     "lint": "./lint.sh",
     "clean": "rm -rf build",
-    "install-globals": "yarn global add create-react-native-app react-native-cli typescript tslint prettier codecov nyc",
-    "codecov-generate": "./createCoverageDir.sh && nyc npm test && nyc check-coverage && nyc report --reporter=json > coverage/coverage.json",
+    "install-globals": "yarn global add create-react-native-app react-native-cli typescript tslint prettier codecov",
     "android-run": "react-native run-android",
     "android-run-release": "react-native run-android --variant=release",
     "android-release": "yarn android-reverse && yarn android-run-release",
@@ -37,7 +36,7 @@
     "build": "tsc",
     "build-watch": "tsc --watch",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
-    "dev": "yarn install && yarn install-globals && pod-install && yarn lint && yarn build"
+    "dev": "yarn install && yarn install-globals && pod-install && yarn lint && yarn build && yarn test"
   },
   "dependencies": {
     "@mapbox/react-native-mapbox-gl": "^6.1.3",
