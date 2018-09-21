@@ -5,6 +5,7 @@ import { CrossTabStatelessComponent } from '../ReactNavigator';
 import styles, { TabIconSize } from '../styles';
 import { CrossFbLoginButton } from '../facebook/CrossFbLoginButton';
 import CrossLabel from '../core/CrossLabel';
+import CrossGoogleLoginButton from '../google/CrossGoogleLoginButton';
 
 export const HomeScreen: CrossTabStatelessComponent = () => (
   <View style={styles.container}>
@@ -113,9 +114,17 @@ export const HomeScreen: CrossTabStatelessComponent = () => (
         >
           - 0.8.0 react-native-fbsdk
         </CrossLabel>
+        <CrossLabel
+          onPress={() =>
+            Linking.openURL('https://github.com/react-native-community/react-native-google-signin')
+          }
+        >
+          - 1.0.0-rc5 react-native-google-signin
+        </CrossLabel>
       </View>
     </ScrollView>
     <CrossFbLoginButton />
+    <CrossGoogleLoginButton  />
   </View>
 );
 

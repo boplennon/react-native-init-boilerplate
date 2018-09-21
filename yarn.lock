@@ -692,6 +692,13 @@
     "@types/react" "*"
     "@types/react-native" "*"
 
+"@types/react-native-google-signin@^0.12.3":
+  version "0.12.3"
+  resolved "https://registry.yarnpkg.com/@types/react-native-google-signin/-/react-native-google-signin-0.12.3.tgz#53fcfe7488ff3842b737d69d999dc6df4eb75343"
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+
 "@types/react-native-indicators@^0.13.1":
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/@types/react-native-indicators/-/react-native-indicators-0.13.1.tgz#6cdd175d9fab2418c734efbaae5c0fc2e48ffffb"
@@ -5603,6 +5610,10 @@ react-native-fbsdk@^0.8.0:
     progress "^2.0.0"
     pump "^1.0.2"
     xcode "^0.9.3"
+
+react-native-google-signin@^1.0.0-rc5:
+  version "1.0.0-rc5"
+  resolved "https://registry.yarnpkg.com/react-native-google-signin/-/react-native-google-signin-1.0.0-rc5.tgz#bc8ffa27297c0ba1e06230c0cad2dee71819175c"
 
 react-native-indicators@^0.13.0:
   version "0.13.0"

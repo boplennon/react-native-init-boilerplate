@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>912088953703-bbttsf2l27q2063qcjqpr9fn1ep9hctq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.912088953703-bbttsf2l27q2063qcjqpr9fn1ep9hctq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAufrUD25AItd-2Ns8Dka8Q6NIz5K56h2k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>912088953703</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.RnEjectSanity</string>
+	<key>PROJECT_ID</key>
+	<string>rninitboilerplat-1537429888155</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rninitboilerplat-1537429888155.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:912088953703:ios:2af20e15e5da82a4</string>
+	<key>DATABASE_URL</key>
+	<string>https://rninitboilerplat-1537429888155.firebaseio.com</string>
+</dict>
+</plist>

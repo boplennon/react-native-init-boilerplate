@@ -14,8 +14,9 @@
 #else
 #import "RNSentry.h" // This is used for versions of react < 0.40
 #endif
-#import <GoogleMaps/GoogleMaps.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <GoogleMaps/GoogleMaps.h> // Google maps support
+#import "RNGoogleSignin.h" // Google signin
+#import <FBSDKCoreKit/FBSDKCoreKit.h> // Facebook SDK
 
 @implementation AppDelegate
 
@@ -53,15 +54,20 @@ RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
 // Facebook SDK - handle deep linking
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
+            sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
             options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
   
-  BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
-                                                                openURL:url
-                                                      sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
-                                                             annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
-                  ];
-  // Add any custom logic here.
-  return handled;
+  // FB url
+  return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                        openURL:url
+                                              sourceApplication:sourceApplication
+                                                     annotation:annotation
+          ]
+  || [RNGoogleSignin application:application
+                         openURL:url
+               sourceApplication:sourceApplication
+                      annotation:annotation
+      ]; // Google url
 }
 
 // Facebook SDK: log app launches

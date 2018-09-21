@@ -139,6 +139,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":react-native-google-signin")){
+        exclude group: "com.google.android.gms" // very important
+    }
     implementation(project(':react-native-fbsdk'))
     implementation(project(':react-native-sentry'))
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -151,6 +154,7 @@ dependencies {
     }
     implementation "com.google.android.gms:play-services-base:$googlePlayServicesVersion"
     implementation "com.google.android.gms:play-services-maps:$googlePlayServicesVersion"
+    implementation "com.google.android.gms:play-services-auth:$googlePlayServicesVersion"
     implementation(project(':react-native-vector-icons'))
 }
 

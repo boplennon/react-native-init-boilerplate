@@ -115,9 +115,15 @@ ShallowWrapper {
             >
               - 0.8.0 react-native-fbsdk
             </CrossLabel>
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 1.0.0-rc5 react-native-google-signin
+            </CrossLabel>
           </UNDEFINED>
         </UNDEFINED>,
         <Unknown />,
+        <CrossGoogleLoginButton />,
       ],
       "style": Object {
         "flex": 1,
@@ -230,6 +236,11 @@ ShallowWrapper {
             >
               - 0.8.0 react-native-fbsdk
             </CrossLabel>
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 1.0.0-rc5 react-native-google-signin
+            </CrossLabel>
           </UNDEFINED>,
         },
         "ref": null,
@@ -323,6 +334,11 @@ ShallowWrapper {
                 onPress={[Function]}
               >
                 - 0.8.0 react-native-fbsdk
+              </CrossLabel>,
+              <CrossLabel
+                onPress={[Function]}
+              >
+                - 1.0.0-rc5 react-native-google-signin
               </CrossLabel>,
             ],
             "style": Object {
@@ -540,6 +556,18 @@ ShallowWrapper {
               "rendered": "- 0.8.0 react-native-fbsdk",
               "type": [Function],
             },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "- 1.0.0-rc5 react-native-google-signin",
+                "onPress": [Function],
+              },
+              "ref": null,
+              "rendered": "- 1.0.0-rc5 react-native-google-signin",
+              "type": [Function],
+            },
           ],
           "type": undefined,
         },
@@ -549,6 +577,15 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
         "props": Object {},
         "ref": null,
         "rendered": null,
@@ -661,9 +698,15 @@ ShallowWrapper {
               >
                 - 0.8.0 react-native-fbsdk
               </CrossLabel>
+              <CrossLabel
+                onPress={[Function]}
+              >
+                - 1.0.0-rc5 react-native-google-signin
+              </CrossLabel>
             </UNDEFINED>
           </UNDEFINED>,
           <Unknown />,
+          <CrossGoogleLoginButton />,
         ],
         "style": Object {
           "flex": 1,
@@ -776,6 +819,11 @@ ShallowWrapper {
               >
                 - 0.8.0 react-native-fbsdk
               </CrossLabel>
+              <CrossLabel
+                onPress={[Function]}
+              >
+                - 1.0.0-rc5 react-native-google-signin
+              </CrossLabel>
             </UNDEFINED>,
           },
           "ref": null,
@@ -869,6 +917,11 @@ ShallowWrapper {
                   onPress={[Function]}
                 >
                   - 0.8.0 react-native-fbsdk
+                </CrossLabel>,
+                <CrossLabel
+                  onPress={[Function]}
+                >
+                  - 1.0.0-rc5 react-native-google-signin
                 </CrossLabel>,
               ],
               "style": Object {
@@ -1086,6 +1139,18 @@ ShallowWrapper {
                 "rendered": "- 0.8.0 react-native-fbsdk",
                 "type": [Function],
               },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "- 1.0.0-rc5 react-native-google-signin",
+                  "onPress": [Function],
+                },
+                "ref": null,
+                "rendered": "- 1.0.0-rc5 react-native-google-signin",
+                "type": [Function],
+              },
             ],
             "type": undefined,
           },
@@ -1095,6 +1160,15 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
           "props": Object {},
           "ref": null,
           "rendered": null,
