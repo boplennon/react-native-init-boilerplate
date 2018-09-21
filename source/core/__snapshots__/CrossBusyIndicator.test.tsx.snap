@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components CrossBusyIndicator should render self and subcomponents 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgba(254, 222, 0, 0.3)",
+      "bottom": 0,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+    }
+  }
+  testID="1"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "bottom": 0,
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+        ]
+      }
+    >
+      <View
+        color="#057dc2"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-end",
+              "flex": 1,
+              "flexDirection": "row",
+              "height": 50,
+              "justifyContent": "center",
+              "opacity": 1,
+              "width": 50,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#057dc2",
+            "fontSize": 20,
+            "fontWeight": "normal",
+            "marginTop": 5,
+            "opacity": 1,
+            "textAlign": "center",
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</View>
+`;

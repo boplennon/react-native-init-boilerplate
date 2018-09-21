@@ -1,5 +1,5 @@
 
-jest.mock('react-native-indicators', () => ({
+module.exports = {
   BallIndicator: 'View',
   BarIndicator: 'View',
   DotIndicator: 'View',
@@ -9,5 +9,5 @@ jest.mock('react-native-indicators', () => ({
   SkypeIndicator: 'View',
   UIActivityIndicator: 'View',
   WaveIndicator: 'View',
-}));
+};
 

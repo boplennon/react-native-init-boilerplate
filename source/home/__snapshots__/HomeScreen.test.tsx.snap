@@ -17,8 +17,566 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <UNDEFINED>
+      "children": <UNDEFINED>
+        <UNDEFINED
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "space-between",
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 20,
+            }
+          }
+        >
+          <CrossLabel
+            style={
+              Object {
+                "color": "black",
+                "fontSize": 16,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            React Native Init Boilerplate
+          </CrossLabel>
+          <CrossLabel>
+            Tested Libraries:
+          </CrossLabel>
+          <CrossLabel>
+            - 16.5.0 react
+          </CrossLabel>
+          <CrossLabel>
+            - 0.57.0 react-native
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 3.0.3 typescript
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 23.1.4 ts-jest
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 0.39.0 react-native-sentry
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 0.21.0 react-native-maps
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 2.14.2 react-navigation
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - ^2.0.1 react-native-paper
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - ^0.4.0 react-navigation-material-bottom-tabs
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 5.0.0 react-native-vector-icons
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 0.19.0 react-native-elements
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 2.1.11 react-apollo
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 14.0.2 graphql
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 1.1.1 aws-amplify
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 0.8.0 react-native-fbsdk
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 1.0.0-rc5 react-native-google-signin
+          </CrossLabel>
+        </UNDEFINED>
+      </UNDEFINED>,
+      "style": Object {
+        "flex": 1,
+        "justifyContent": "space-between",
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 20,
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <UNDEFINED
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "space-between",
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 20,
+            }
+          }
+        >
+          <CrossLabel
+            style={
+              Object {
+                "color": "black",
+                "fontSize": 16,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            React Native Init Boilerplate
+          </CrossLabel>
+          <CrossLabel>
+            Tested Libraries:
+          </CrossLabel>
+          <CrossLabel>
+            - 16.5.0 react
+          </CrossLabel>
+          <CrossLabel>
+            - 0.57.0 react-native
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 3.0.3 typescript
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 23.1.4 ts-jest
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 0.39.0 react-native-sentry
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 0.21.0 react-native-maps
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 2.14.2 react-navigation
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - ^2.0.1 react-native-paper
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - ^0.4.0 react-navigation-material-bottom-tabs
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 5.0.0 react-native-vector-icons
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 0.19.0 react-native-elements
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 2.1.11 react-apollo
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 14.0.2 graphql
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 1.1.1 aws-amplify
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 0.8.0 react-native-fbsdk
+          </CrossLabel>
+          <CrossLabel
+            onPress={[Function]}
+          >
+            - 1.0.0-rc5 react-native-google-signin
+          </CrossLabel>
+        </UNDEFINED>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <CrossLabel
+              style={
+                Object {
+                  "color": "black",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              React Native Init Boilerplate
+            </CrossLabel>,
+            <CrossLabel>
+              Tested Libraries:
+            </CrossLabel>,
+            <CrossLabel>
+              - 16.5.0 react
+            </CrossLabel>,
+            <CrossLabel>
+              - 0.57.0 react-native
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 3.0.3 typescript
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 23.1.4 ts-jest
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 0.39.0 react-native-sentry
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 0.21.0 react-native-maps
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 2.14.2 react-navigation
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - ^2.0.1 react-native-paper
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - ^0.4.0 react-navigation-material-bottom-tabs
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 5.0.0 react-native-vector-icons
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 0.19.0 react-native-elements
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 2.1.11 react-apollo
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 14.0.2 graphql
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 1.1.1 aws-amplify
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 0.8.0 react-native-fbsdk
+            </CrossLabel>,
+            <CrossLabel
+              onPress={[Function]}
+            >
+              - 1.0.0-rc5 react-native-google-signin
+            </CrossLabel>,
+          ],
+          "style": Object {
+            "flex": 1,
+            "justifyContent": "space-between",
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 20,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "React Native Init Boilerplate",
+              "style": Object {
+                "color": "black",
+                "fontSize": 16,
+                "fontWeight": "bold",
+              },
+            },
+            "ref": null,
+            "rendered": "React Native Init Boilerplate",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Tested Libraries:",
+            },
+            "ref": null,
+            "rendered": "Tested Libraries:",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 16.5.0 react",
+            },
+            "ref": null,
+            "rendered": "- 16.5.0 react",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 0.57.0 react-native",
+            },
+            "ref": null,
+            "rendered": "- 0.57.0 react-native",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 3.0.3 typescript",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 3.0.3 typescript",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 23.1.4 ts-jest",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 23.1.4 ts-jest",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 0.39.0 react-native-sentry",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 0.39.0 react-native-sentry",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 0.21.0 react-native-maps",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 0.21.0 react-native-maps",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 2.14.2 react-navigation",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 2.14.2 react-navigation",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- ^2.0.1 react-native-paper",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- ^2.0.1 react-native-paper",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- ^0.4.0 react-navigation-material-bottom-tabs",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- ^0.4.0 react-navigation-material-bottom-tabs",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 5.0.0 react-native-vector-icons",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 5.0.0 react-native-vector-icons",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 0.19.0 react-native-elements",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 0.19.0 react-native-elements",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 2.1.11 react-apollo",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 2.1.11 react-apollo",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 14.0.2 graphql",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 14.0.2 graphql",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 1.1.1 aws-amplify",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 1.1.1 aws-amplify",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 0.8.0 react-native-fbsdk",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 0.8.0 react-native-fbsdk",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "- 1.0.0-rc5 react-native-google-signin",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "- 1.0.0-rc5 react-native-google-signin",
+            "type": [Function],
+          },
+        ],
+        "type": undefined,
+      },
+      "type": undefined,
+    },
+    "type": undefined,
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <UNDEFINED>
           <UNDEFINED
             style={
               Object {
@@ -122,20 +680,16 @@ ShallowWrapper {
             </CrossLabel>
           </UNDEFINED>
         </UNDEFINED>,
-        <Unknown />,
-        <CrossGoogleLoginButton />,
-      ],
-      "style": Object {
-        "flex": 1,
-        "justifyContent": "space-between",
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 20,
+        "style": Object {
+          "flex": 1,
+          "justifyContent": "space-between",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 20,
+        },
       },
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
@@ -573,608 +1127,6 @@ ShallowWrapper {
         },
         "type": undefined,
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": undefined,
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <UNDEFINED>
-            <UNDEFINED
-              style={
-                Object {
-                  "flex": 1,
-                  "justifyContent": "space-between",
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                  "paddingTop": 20,
-                }
-              }
-            >
-              <CrossLabel
-                style={
-                  Object {
-                    "color": "black",
-                    "fontSize": 16,
-                    "fontWeight": "bold",
-                  }
-                }
-              >
-                React Native Init Boilerplate
-              </CrossLabel>
-              <CrossLabel>
-                Tested Libraries:
-              </CrossLabel>
-              <CrossLabel>
-                - 16.5.0 react
-              </CrossLabel>
-              <CrossLabel>
-                - 0.57.0 react-native
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 3.0.3 typescript
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 23.1.4 ts-jest
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 0.39.0 react-native-sentry
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 0.21.0 react-native-maps
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 2.14.2 react-navigation
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - ^2.0.1 react-native-paper
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - ^0.4.0 react-navigation-material-bottom-tabs
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 5.0.0 react-native-vector-icons
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 0.19.0 react-native-elements
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 2.1.11 react-apollo
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 14.0.2 graphql
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 1.1.1 aws-amplify
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 0.8.0 react-native-fbsdk
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 1.0.0-rc5 react-native-google-signin
-              </CrossLabel>
-            </UNDEFINED>
-          </UNDEFINED>,
-          <Unknown />,
-          <CrossGoogleLoginButton />,
-        ],
-        "style": Object {
-          "flex": 1,
-          "justifyContent": "space-between",
-          "paddingLeft": 10,
-          "paddingRight": 10,
-          "paddingTop": 20,
-        },
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": <UNDEFINED
-              style={
-                Object {
-                  "flex": 1,
-                  "justifyContent": "space-between",
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                  "paddingTop": 20,
-                }
-              }
-            >
-              <CrossLabel
-                style={
-                  Object {
-                    "color": "black",
-                    "fontSize": 16,
-                    "fontWeight": "bold",
-                  }
-                }
-              >
-                React Native Init Boilerplate
-              </CrossLabel>
-              <CrossLabel>
-                Tested Libraries:
-              </CrossLabel>
-              <CrossLabel>
-                - 16.5.0 react
-              </CrossLabel>
-              <CrossLabel>
-                - 0.57.0 react-native
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 3.0.3 typescript
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 23.1.4 ts-jest
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 0.39.0 react-native-sentry
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 0.21.0 react-native-maps
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 2.14.2 react-navigation
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - ^2.0.1 react-native-paper
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - ^0.4.0 react-navigation-material-bottom-tabs
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 5.0.0 react-native-vector-icons
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 0.19.0 react-native-elements
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 2.1.11 react-apollo
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 14.0.2 graphql
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 1.1.1 aws-amplify
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 0.8.0 react-native-fbsdk
-              </CrossLabel>
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 1.0.0-rc5 react-native-google-signin
-              </CrossLabel>
-            </UNDEFINED>,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": Array [
-                <CrossLabel
-                  style={
-                    Object {
-                      "color": "black",
-                      "fontSize": 16,
-                      "fontWeight": "bold",
-                    }
-                  }
-                >
-                  React Native Init Boilerplate
-                </CrossLabel>,
-                <CrossLabel>
-                  Tested Libraries:
-                </CrossLabel>,
-                <CrossLabel>
-                  - 16.5.0 react
-                </CrossLabel>,
-                <CrossLabel>
-                  - 0.57.0 react-native
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 3.0.3 typescript
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 23.1.4 ts-jest
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 0.39.0 react-native-sentry
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 0.21.0 react-native-maps
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 2.14.2 react-navigation
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - ^2.0.1 react-native-paper
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - ^0.4.0 react-navigation-material-bottom-tabs
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 5.0.0 react-native-vector-icons
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 0.19.0 react-native-elements
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 2.1.11 react-apollo
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 14.0.2 graphql
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 1.1.1 aws-amplify
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 0.8.0 react-native-fbsdk
-                </CrossLabel>,
-                <CrossLabel
-                  onPress={[Function]}
-                >
-                  - 1.0.0-rc5 react-native-google-signin
-                </CrossLabel>,
-              ],
-              "style": Object {
-                "flex": 1,
-                "justifyContent": "space-between",
-                "paddingLeft": 10,
-                "paddingRight": 10,
-                "paddingTop": 20,
-              },
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "React Native Init Boilerplate",
-                  "style": Object {
-                    "color": "black",
-                    "fontSize": 16,
-                    "fontWeight": "bold",
-                  },
-                },
-                "ref": null,
-                "rendered": "React Native Init Boilerplate",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Tested Libraries:",
-                },
-                "ref": null,
-                "rendered": "Tested Libraries:",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 16.5.0 react",
-                },
-                "ref": null,
-                "rendered": "- 16.5.0 react",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 0.57.0 react-native",
-                },
-                "ref": null,
-                "rendered": "- 0.57.0 react-native",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 3.0.3 typescript",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 3.0.3 typescript",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 23.1.4 ts-jest",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 23.1.4 ts-jest",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 0.39.0 react-native-sentry",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 0.39.0 react-native-sentry",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 0.21.0 react-native-maps",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 0.21.0 react-native-maps",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 2.14.2 react-navigation",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 2.14.2 react-navigation",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- ^2.0.1 react-native-paper",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- ^2.0.1 react-native-paper",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- ^0.4.0 react-navigation-material-bottom-tabs",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- ^0.4.0 react-navigation-material-bottom-tabs",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 5.0.0 react-native-vector-icons",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 5.0.0 react-native-vector-icons",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 0.19.0 react-native-elements",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 0.19.0 react-native-elements",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 2.1.11 react-apollo",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 2.1.11 react-apollo",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 14.0.2 graphql",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 14.0.2 graphql",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 1.1.1 aws-amplify",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 1.1.1 aws-amplify",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 0.8.0 react-native-fbsdk",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 0.8.0 react-native-fbsdk",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "- 1.0.0-rc5 react-native-google-signin",
-                  "onPress": [Function],
-                },
-                "ref": null,
-                "rendered": "- 1.0.0-rc5 react-native-google-signin",
-                "type": [Function],
-              },
-            ],
-            "type": undefined,
-          },
-          "type": undefined,
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
       "type": undefined,
     },
   ],

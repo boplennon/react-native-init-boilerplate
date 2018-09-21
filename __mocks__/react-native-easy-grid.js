@@ -1,8 +1,8 @@
 
-jest.mock('react-native-easy-grid', () => ({
+module.exports = {
     Col: 'View',
     Row: 'View',
     Grid: 'View'
-  }));
+  };
   
   

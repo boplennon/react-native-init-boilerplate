@@ -168,7 +168,7 @@ export interface IBusyIndicatorProps {
  * @param {string} message optional message to show while busy. Defaults to empty string.
  * @param {IndicatorType} type of spinner.Defaults to "MaterialIndicator"
  */
-const BusyIndicator = ({
+const CrossBusyIndicator = ({
   isBusy = true,
   message = '',
   type = IndicatorType.MaterialIndicator,
@@ -195,4 +195,4 @@ const BusyIndicator = ({
     </View>
   ) : null;
 
-export default BusyIndicator;
+export default CrossBusyIndicator;

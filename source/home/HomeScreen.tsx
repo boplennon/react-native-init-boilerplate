@@ -3,9 +3,7 @@ import { ScrollView, Text, View, Linking } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { CrossTabStatelessComponent } from '../ReactNavigator';
 import styles, { TabIconSize } from '../styles';
-import { CrossFbLoginButton } from '../facebook/CrossFbLoginButton';
 import CrossLabel from '../core/CrossLabel';
-import CrossGoogleLoginButton from '../google/CrossGoogleLoginButton';
 
 export const HomeScreen: CrossTabStatelessComponent = () => (
   <View style={styles.container}>
@@ -123,8 +121,6 @@ export const HomeScreen: CrossTabStatelessComponent = () => (
         </CrossLabel>
       </View>
     </ScrollView>
-    <CrossFbLoginButton />
-    <CrossGoogleLoginButton  />
   </View>
 );
 

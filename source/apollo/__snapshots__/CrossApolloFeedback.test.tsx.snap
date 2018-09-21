@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components CrossApolloFeedback should render self and subcomponents 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "justifyContent": "space-between",
+      "paddingLeft": 10,
+      "paddingRight": 10,
+      "paddingTop": 20,
+    }
+  }
+/>
+`;

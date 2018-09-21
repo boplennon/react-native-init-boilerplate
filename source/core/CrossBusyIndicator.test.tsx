@@ -1,13 +1,13 @@
 // core/components/BusyIndicator.test
 /// <reference types="jest"/>
 import React from 'react';
-import { shallow } from 'enzyme';
+import TestRenderer from 'react-test-renderer';
 
 import BusyIndicator, {
   IBusyIndicatorProps,
   IndicatorType,
   Spinner,
-} from './BusyIndicator';
+} from './CrossBusyIndicator';
 
 jest.unmock('react-native');
 
@@ -17,11 +17,11 @@ function setup(type = IndicatorType.MaterialIndicator) {
     type,
   };
 
-  const enzymeWrapper = shallow(<BusyIndicator {...props} />);
+  const wrapper = TestRenderer.create(<BusyIndicator {...props} />);
 
   return {
     props,
-    enzymeWrapper,
+    wrapper,
   };
 }
 
@@ -32,15 +32,15 @@ describe('components', () => {
    *    const busyProps = enzymeWrapper.find(BusyIndicator).props();
    *    expect(busyProps.isBusy).toBe(false);
    */
-  describe('BusyIndicator', () => {
+  describe('CrossBusyIndicator', () => {
     it('should render self and subcomponents', () => {
-      const { enzymeWrapper } = setup();
-      expect(enzymeWrapper).toMatchSnapshot();
+      const { wrapper } = setup();
+      expect(wrapper.toJSON()).toMatchSnapshot();
     });
 
     it('should use DotIndicator type', () => {
-      const { enzymeWrapper } = setup(IndicatorType.DotIndicator);
-      expect(enzymeWrapper.find(Spinner)).toBeDefined();
+      const { wrapper } = setup(IndicatorType.DotIndicator);
+      expect(wrapper.root.findByType(Spinner)).toBeDefined();
     });
   });
 });
