@@ -20,6 +20,12 @@ Always run **[`yarn dev`](#yarn-dev)** after pull / clone to install global depe
 [![dependencies Status](https://david-dm.org/crossplatformsweden/react-native-init-boilerplate/status.svg)](https://david-dm.org/crossplatformsweden/react-native-init-boilerplate)
 [![Prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
+[![GitHub forks](https://img.shields.io/github/forks/crossplatformsweden/react-native-init-boilerplate.svg?style=social&label=Fork)](https://github.com/crossplatformsweden/react-native-init-boilerplate)
+[![GitHub stars](https://img.shields.io/github/stars/crossplatformsweden/react-native-init-boilerplate.svg?style=social&label=Star)](https://github.com/crossplatformsweden/react-native-init-boilerplate)
+[![GitHub watchers](https://img.shields.io/github/watchers/crossplatformsweden/react-native-init-boilerplate.svg?style=social&label=Watch)](https://github.com/crossplatformsweden/react-native-init-boilerplate)
+[![GitHub followers](https://img.shields.io/github/followers/crossplatformsweden.svg?style=social&label=Follow)](https://github.com/crossplatformsweden/)
+[![Twitter Follow](https://img.shields.io/twitter/follow/crossplatformse.svg?style=social)](https://twitter.com/crossplatformse)
+
 ## Table of Contents
 
 - [React-Native Init Boilerplate](#react-native-init-boilerplate)
