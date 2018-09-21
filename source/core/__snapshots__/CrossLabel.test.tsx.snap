@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components CrossButton With title should render 1`] = `
+exports[`components CrossLabel With onPress should have link style 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CrossButton
-    iconName="home"
-    onPress={[MockFunction]}
-    title="home"
-  />,
+  Symbol(enzyme.__unrendered__): <CrossLabel
+    onPress={[Function]}
+  >
+    Click me
+  </CrossLabel>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -22,20 +22,15 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <UNDEFINED
-        iconName="home"
-        mode="contained"
         onPress={[Function]}
         style={
           Object {
-            "height": 45,
-            "marginBottom": 10,
-            "marginRight": 10,
-            "marginTop": 10,
+            "color": "blue",
+            "fontWeight": "bold",
           }
         }
-        title="home"
       >
-        home
+        Click me
       </UNDEFINED>,
       "style": Object {
         "flex": 1,
@@ -51,21 +46,15 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": "home",
-        "color": undefined,
-        "iconName": "home",
-        "mode": "contained",
+        "children": "Click me",
         "onPress": [Function],
         "style": Object {
-          "height": 45,
-          "marginBottom": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "color": "blue",
+          "fontWeight": "bold",
         },
-        "title": "home",
       },
       "ref": null,
-      "rendered": "home",
+      "rendered": "Click me",
       "type": undefined,
     },
     "type": [Function],
@@ -77,20 +66,15 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <UNDEFINED
-          iconName="home"
-          mode="contained"
           onPress={[Function]}
           style={
             Object {
-              "height": 45,
-              "marginBottom": 10,
-              "marginRight": 10,
-              "marginTop": 10,
+              "color": "blue",
+              "fontWeight": "bold",
             }
           }
-          title="home"
         >
-          home
+          Click me
         </UNDEFINED>,
         "style": Object {
           "flex": 1,
@@ -106,21 +90,15 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": "home",
-          "color": undefined,
-          "iconName": "home",
-          "mode": "contained",
+          "children": "Click me",
           "onPress": [Function],
           "style": Object {
-            "height": 45,
-            "marginBottom": 10,
-            "marginRight": 10,
-            "marginTop": 10,
+            "color": "blue",
+            "fontWeight": "bold",
           },
-          "title": "home",
         },
         "ref": null,
-        "rendered": "home",
+        "rendered": "Click me",
         "type": undefined,
       },
       "type": [Function],
@@ -148,14 +126,14 @@ ShallowWrapper {
 }
 `;
 
-exports[`components CrossButton Without title should renders 1`] = `
+exports[`components CrossLabel Without onPress should render 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CrossButton
-    iconName="map"
+  Symbol(enzyme.__unrendered__): <CrossLabel
     onPress={[MockFunction]}
-    title={null}
-  />,
+  >
+    Hello
+  </CrossLabel>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -170,13 +148,16 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <UNDEFINED
-        iconName="map"
-        name="map"
-        onPress={[Function]}
-        reverse={true}
-        title={null}
-        type="font-awesome"
-      />,
+        onPress={[MockFunction]}
+        style={
+          Object {
+            "color": "blue",
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Hello
+      </UNDEFINED>,
       "style": Object {
         "flex": 1,
         "justifyContent": "space-between",
@@ -191,16 +172,15 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "color": undefined,
-        "iconName": "map",
-        "name": "map",
-        "onPress": [Function],
-        "reverse": true,
-        "title": null,
-        "type": "font-awesome",
+        "children": "Hello",
+        "onPress": [MockFunction],
+        "style": Object {
+          "color": "blue",
+          "fontWeight": "bold",
+        },
       },
       "ref": null,
-      "rendered": null,
+      "rendered": "Hello",
       "type": undefined,
     },
     "type": [Function],
@@ -212,13 +192,16 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <UNDEFINED
-          iconName="map"
-          name="map"
-          onPress={[Function]}
-          reverse={true}
-          title={null}
-          type="font-awesome"
-        />,
+          onPress={[MockFunction]}
+          style={
+            Object {
+              "color": "blue",
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Hello
+        </UNDEFINED>,
         "style": Object {
           "flex": 1,
           "justifyContent": "space-between",
@@ -233,16 +216,15 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "color": undefined,
-          "iconName": "map",
-          "name": "map",
-          "onPress": [Function],
-          "reverse": true,
-          "title": null,
-          "type": "font-awesome",
+          "children": "Hello",
+          "onPress": [MockFunction],
+          "style": Object {
+            "color": "blue",
+            "fontWeight": "bold",
+          },
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "Hello",
         "type": undefined,
       },
       "type": [Function],

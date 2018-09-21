@@ -3,57 +3,56 @@ import React from 'react';
 import { Button } from 'react-native-paper';
 import { Icon } from 'react-native-elements';
 import Theme from '../Styles';
-import { ViewStyle, StyleProp, View } from 'react-native';
+import { ViewStyle, StyleProp, View, ButtonProps } from 'react-native';
 import { Color } from 'csstype';
-import { Colors } from '../Styles';
 import _ from 'lodash';
 
-export interface IButtonProps {
-  onPress: Function;
-  disabled?: boolean;
-  style?: StyleProp<ViewStyle>;
+/**
+ * Extends button props. Remarks: use custom {@link onPressButton} event
+ */
+export interface IButtonProps extends ButtonProps {
   textColor?: Color;
   iconName?: string;
   backgroundColor?: Color;
-  title?: string;
+  style?: StyleProp<ViewStyle>;
+  /**
+   * Custom pressed event to use instead of `onPress`
+   */
+  onPressButton?: () => void;
 }
 
 /**
- * A custom button that displays as an icon if {@link title} is not supplied
+ * A custom button that displays as an icon if {@param title} is not supplied
+ *
+ * Remarks: use custom {@param onPressButton} event
  * @param param0 params
  */
-export const CrossButton = ({
-  onPress,
-  disabled = false,
-  style = null,
-  title = undefined,
-  iconName = undefined,
-  backgroundColor = Colors.NextButton,
-}: IButtonProps) => {
+export class CrossButton extends React.Component<IButtonProps> {
+  render() {
   return (
     <View style={Theme.container}>
-      {_.isNil(title) ? (
+      {_.isNil(this.props.title) ? (
         <Icon
           reverse
-          onPress={() => onPress()}
-          name={_.isNil(iconName) ? 'house' : iconName.toString()}
-          type="font-awesome"
-          color={backgroundColor}
+          {...this.props}
+          onPress={this.props.onPressButton ? this.props.onPressButton : () => console.log('CrossButton')}
+          name={_.isNil(this.props.iconName) ? 'house' : this.props.iconName.toString()}
+          type='font-awesome'
+          color={this.props.backgroundColor}
         />
       ) : (
         <Button
-          // @ts-ignore
-          color={backgroundColor}
-          disabled={disabled}
-          style={style || Theme.button}
-          onPress={() => onPress()}
-          mode="contained"
+          color={this.props.backgroundColor}
+          {...this.props}
+          style={this.props.style || Theme.button}
+          onPress={this.props.onPressButton ? this.props.onPressButton : () =>  console.log('CrossButton')}
+          mode='contained'
         >
-          {title}
+          {this.props.title}
         </Button>
       )}
     </View>
-  );
-};
+  ); }
+}
 
 export default CrossButton;

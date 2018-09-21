@@ -99,6 +99,10 @@ export const styles = StyleSheet.create({
     color: 'gray',
     fontSize: 14,
   },
+  link: {
+    color: 'blue',
+    fontWeight: 'bold',
+  },
   tabIcon: {
     // Icons in tab bar won't show without explicit width / height
     width: 25,
