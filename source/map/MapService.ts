@@ -1,5 +1,3 @@
-// map/reducers/index
-// @ts-ignore
 import _ from 'lodash';
 import * as types from './types';
 
@@ -7,13 +5,6 @@ export interface IFitToCoordOptions {
   edgePadding: types.IEdgePadding;
   animated: boolean;
 }
-
-// const { width, height } = Dimensions.get('window');
-// const ASPECT_RATIO = width / height;
-// const LATITUDE = 0;
-// const LONGITUDE = 0;
-// const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
-// const LATITUDE_DELTA = 0.0922;
 
 /**
  * Provides functions for working with a {@link setMap} instance.
@@ -54,26 +45,6 @@ class MapService {
     }
   }
 
-  //   onLongPress = (event) => {
-  //     if (_.isNil(this.map)) {
-  //       return;
-  //     }
-
-  //     this.map.animateToCoordinate(event.nativeEvent.coordinate);
-
-  //     const marker = {
-  //       key: 'second',
-  //       latlng: event.nativeEvent.coordinate,
-  //       title: 'this is the title',
-  //       description: 'This is the description',
-  //     };
-
-  //     const markers = this.state.markers.slice();
-  //     markers.push(marker);
-  //     this.setState({ markers });
-  //     this.setState(this.state.region: marker);
-  //   };
-
   /**
    * Animates map to the specified coordinates
    *
@@ -94,7 +65,7 @@ class MapService {
 
     console.log('** MapService: goToCoordinate **');
     console.log(targetCoords);
-    this.map.animateToCoordinate(targetCoords, 2000);
+    return this.map.animateToCoordinate(targetCoords, 2000);
   }
 
   /**
@@ -113,7 +84,7 @@ class MapService {
     }
 
     console.log('** MapService: GoToAngle ' + angle + ' **');
-    this.map.animateToViewingAngle(angle, duration);
+    return this.map.animateToViewingAngle(angle, duration);
   }
 
   /**
@@ -149,7 +120,7 @@ class MapService {
     }
 
     console.log('** MapService: fitToCoordinates **');
-    this.map.fitToCoordinates(coordinates, options);
+    return this.map.fitToCoordinates(coordinates, options);
   }
 
   /**
@@ -172,7 +143,7 @@ class MapService {
         return;
       }
 
-      setTimeout(() => {
+      return setTimeout(() => {
         if (this.map) {
           this.goToCoordinate(userLocation);
 
@@ -184,77 +155,15 @@ class MapService {
           this.fitToCoordinates(targetCord);
 
           this.isOnUserLocation = true;
+          return true;
         }
+        return false;
       }, 200);
+      return true;
     } catch (ex) {
       console.log(ex);
       this.isOnUserLocation = false;
-    }
-  }
-
-  /**
-   * Add location to map markers
-   *
-   * @memberof MapService
-   * @public
-   *
-   * @param {Object} mapState Redux state property for MapReducer
-   */
-  addLocationToMarkers = (mapState: types.IMapState) => {
-    if (_.isNil(mapState)) {
-      return;
-    }
-
-    try {
-      // const { markers } = this.state;
-      if (_.isNil(mapState.location) || _.isNil(mapState.location.latitude)) {
-        return;
-      }
-
-      // this.setState({ isBusy: true });
-
-      // "Your location pin" functionality
-      // TODO: Move to "create ad"
-      /*
-            const title = 'Din position';
-            const userPin = {
-              isUser: true,
-              location: map.location,
-              title,
-              description: '',
-            };
-            const user = _.indexOf(_.find(markers, t => t.title === title));
-            if (user) {
-              return;
-              // markers.splice(user, 1, userPin);
-            }
-
-            // Add user position to markers
-            markers.push(userPin);
-
-            this.setState({ markers });
-
-            // const defaultPadding = 80;
-            // const edgePadding = {
-            //   top: defaultPadding, right: defaultPadding, bottom: defaultPadding, left: defaultPadding,
-            // };
-          */
-
-      if (mapState) {
-        this.goToCoordinate({
-          latitude: mapState.location.latitude,
-          longitude: mapState.location.longitude,
-        });
-        // this.map.fitToCoordinates(_.map(this.state.markers, m => m.location), {
-        //   edgePadding,
-        //   animated: true,
-        // });
-      }
-    } catch (ex) {
-      // eslint-disable-next-line no-console
-      console.log(ex);
-    } finally {
-      // this.setState({ isBusy: false });
+      return false;
     }
   }
 

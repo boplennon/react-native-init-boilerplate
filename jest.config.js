@@ -36,8 +36,13 @@ module.exports = {
   },
   collectCoverage: true,
   collectCoverageFrom: [
-    "**/*.{js,jsx}",
+    "**/*.{ts,tsx}",
     "!**/node_modules/**",
-    "!**/vendor/**"
+    "!**/vendor/**",
+    "!**/__mocks__/**",
+    "!**/__snapshots__/**",
+    "!**/android/**",
+    "!**/ios/**",
+    "!**/config/**"
   ]
 };
