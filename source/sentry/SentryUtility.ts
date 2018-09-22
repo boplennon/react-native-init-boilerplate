@@ -1,5 +1,6 @@
 import { Sentry } from 'react-native-sentry';
 import _ from 'lodash';
+import CrossConfigReader from '../config/CrossConfigReader';
 
 /**
  * Utility for Sentry bug tracking (@see https://sentry.io/)
@@ -18,9 +19,8 @@ class SentryUtilityInternal {
     }
     try {
       // Set up sentry bug tracking
-      // TODO: Move to secret config
       Sentry.config(
-        'https://6bedde4a9c0b4bc5b5a2b17973edc460@sentry.io/1284889'
+        CrossConfigReader.GetEnv().SENTRY_URI
       ).install();
       console.log('** Sentry installed and initiated (SentryUtility) **');
     } catch (e) {

@@ -1,15 +1,16 @@
 import { Platform } from 'react-native';
 import {
   NavigationBottomTabScreenOptions,
-  NavigationRouteConfigMap
+  NavigationRouteConfigMap,
 } from 'react-navigation';
 import {
   createMaterialBottomTabNavigator,
-  TabConfig
+  TabConfig,
 } from 'react-navigation-material-bottom-tabs';
 import { HomeScreen } from './home/HomeScreen';
 import { MapScreen } from './map/MapScreen';
 import { Colors } from './styles';
+import CrossConfigReader from './config/CrossConfigReader';
 
 const tabBarOptions: TabConfig = {
   activeTintColor: Colors.CrossYellow,
@@ -19,19 +20,18 @@ const tabBarOptions: TabConfig = {
 };
 
 /**
- * Prefix used to identify this app
- */
-export const appPrefix = 'myapp';
-
-// on Android, the URI prefix typically contains a host in addition to scheme
-// on Android, note the required / (slash) at the end of the host property
-/**
  * Uri used to navigate to this app
+ *
+ * On Android, the URI prefix typically contains a host in addition to scheme
+ *
+ * On Android, note the required / (slash) at the end of the host property
  */
-export const appUri =
-  Platform.OS === 'android'
+export const GetAppUri = () => {
+  const appPrefix = CrossConfigReader.GetEnv().APP_PREFIX;
+  return Platform.OS === 'android'
     ? `${appPrefix}://${appPrefix}/`
     : `${appPrefix}://`;
+};
 
 export interface CrossTabStatelessComponent extends React.StatelessComponent {
   navigationOptions?: NavigationBottomTabScreenOptions;

@@ -1,13 +1,13 @@
 const SentryMock = {
-  install: () => {},
-  config: () => {
-    return {
-      install: () => {},
-    };
+  Sentry: {
+    install: () => {},
+    config: () => {
+      return {
+        install: () => {},
+      };
+    },
+    captureException: () => {},
   },
-  captureException: () => {},
 };
 
 module.exports = SentryMock;
-
-// jest.mock('react-native-sentry', () => SentryMock);

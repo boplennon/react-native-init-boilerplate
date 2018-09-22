@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components SentryUtility install should match snapshot 1`] = `undefined`;
+
+exports[`components SentryUtility should match snapshot 1`] = `SentryUtilityInternal {}`;

@@ -1,11 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import ApolloContainer from './ApolloContainer';
-
+import App from './App';
 
 function setup() {
-  return shallow(<ApolloContainer />);
+  return shallow(<App />);
 }
 
 describe('components', () => {
