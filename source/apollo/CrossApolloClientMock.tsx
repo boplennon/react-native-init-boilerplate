@@ -36,7 +36,7 @@ export const DefaultOptions: IApolloClientMockOptions = {
     endDate: String
     description: String
   }
-  
+
   input CreateBookingInput {
     startDate: String!
     endDate: String

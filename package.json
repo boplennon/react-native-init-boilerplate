@@ -39,11 +39,11 @@
     "dev": "yarn install && yarn install-globals && pod-install && yarn lint && yarn build && yarn test"
   },
   "dependencies": {
-    "@mapbox/react-native-mapbox-gl": "^6.1.3",
-    "@types/es6-promise": "^3.3.0",
     "apollo-boost": "^0.1.16",
+    "apollo-cache-persist": "^0.1.1",
     "apollo-client": "^2.4.2",
     "apollo-client-preset": "^1.0.8",
+    "apollo-link-schema": "^1.1.1",
     "aws-amplify": "^1.1.1",
     "aws-amplify-react": "^2.0.2",
     "enzyme": "^3.6.0",
@@ -66,6 +66,7 @@
     "react-navigation-material-bottom-tabs": "^0.4.0"
   },
   "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
     "@types/enzyme": "^3.1.14",
     "@types/graphql": "^14.0.0",
     "@types/jest": "^23.3.2",

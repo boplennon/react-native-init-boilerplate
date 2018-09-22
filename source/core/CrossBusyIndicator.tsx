@@ -12,7 +12,7 @@ import {
   WaveIndicator,
 } from 'react-native-indicators';
 
-import Theme, { Colors } from '../Styles';
+import styles, { Colors } from '../styles';
 
 /**
  * Type of indicator
@@ -176,16 +176,16 @@ const CrossBusyIndicator = ({
   onCancel,
 }: IBusyIndicatorProps) =>
   isBusy ? (
-    <View style={Theme.overlay} testID={testID}>
-      <View style={[Theme.absoluteCentered]}>
-        <View style={[Theme.columnContentTopCenter]}>
-          <Spinner type={type} style={[Theme.spinner]} />
+    <View style={styles.overlay} testID={testID}>
+      <View style={[styles.absoluteCentered]}>
+        <View style={[styles.columnContentTopCenter]}>
+          <Spinner type={type} style={[styles.spinner]} />
         </View>
-        <View style={Theme.columnContentTopCenter}>
-          <Text style={Theme.textSpinner}>{message}</Text>
+        <View style={styles.columnContentTopCenter}>
+          <Text style={styles.textSpinner}>{message}</Text>
           {onCancel ? (
             <TouchableOpacity onPress={onCancel}>
-              <Text style={[Theme.textSpinner, { color: Colors.CancelButton }]}>
+              <Text style={[styles.textSpinner, { color: Colors.CancelButton }]}>
                 Avbryt
               </Text>
             </TouchableOpacity>
