@@ -4,14 +4,14 @@
 
 # React-Native Init Boilerplate
 
-Acts as a boilerplate for projects at [Crossplatform](http://www.crossplatform.se).  
-This project was bootstrapped with [Create React Init](https://github.com/react-community/create-react-native-app).
+Acts as a boilerplate for ejected projects at [Crossplatform](http://www.crossplatform.se). This project was bootstrapped with [Create React Init](https://github.com/react-community/create-react-native-app).
 
 Below you'll find information about performing common tasks.
 
----
+**Remarks:** 
 
-Always run **[`yarn dev`](#yarn-dev)** after pull / clone to install global dependencies
+* You need to **[configure app variables ](#configuration-file--env-)** to use some features.
+* Always run **[`yarn dev`](#yarn-dev)** after pull / clone to install global dependencies
 
 ---
 
@@ -27,53 +27,61 @@ Always run **[`yarn dev`](#yarn-dev)** after pull / clone to install global depe
 [![Twitter Follow](https://img.shields.io/twitter/follow/crossplatformse.svg?style=social)](https://twitter.com/crossplatformse)
 
 ## Table of Contents
-
 - [React-Native Init Boilerplate](#react-native-init-boilerplate)
-  - [Table of Contents](#table-of-contents)
-  - [React-Native 0.57.0](#react-native-0570)
-  - [Can not run ShellScript](#can-not-run-shellscript)
-  - [GraphQL Apollo implementation](#graphql-apollo-implementation)
+  * [Table of Contents](#table-of-contents)
+  * [React-Native 0.57.0](#react-native-0570)
+  * [Can not run ShellScript](#can-not-run-shellscript)
+  * [GraphQL Apollo implementation](#graphql-apollo-implementation)
+- [Configuration file `.env`](#configuration-file--env-)
+  * [Usage](#usage)
+    + [Native projects](#native-projects)
+    + [React-Native TypeScript](#react-native-typescript)
+  * [Add key](#add-key)
+    + [`.env`](#-env-)
+    + [TypeScript interface `IEnv.ts`](#typescript-interface--ienvts-)
 - [Project resources](#project-resources)
-  - [Insights Sentry](#insights-sentry)
-  - [Backlog & kanban](#backlog---kanban)
-  - [Build server and deploy: VS App Center](#build-server-and-deploy--vs-app-center)
-  - [Source Control: GitHub](#source-control--github)
+  * [Insights Sentry](#insights-sentry)
+  * [Backlog & kanban](#backlog---kanban)
+  * [Build server and deploy: VS App Center](#build-server-and-deploy--vs-app-center)
+  * [Source Control: GitHub](#source-control--github)
 - [Tools](#tools)
-  - [Java](#java)
-  - [Git](#git)
-    - [Git Credential Manager](#git-credential-manager)
-  - [Node](#node)
-  - [Yarn](#yarn)
-  - [Visual Studio Code](#visual-studio-code)
-  - [Bash on Windows](#bash-on-windows)
+  * [Java](#java)
+  * [Git](#git)
+    + [Git Credential Manager](#git-credential-manager)
+  * [Node](#node)
+  * [Yarn](#yarn)
+  * [Visual Studio Code](#visual-studio-code)
+  * [Bash on Windows](#bash-on-windows)
 - [Installation](#installation)
 - [Scripts](#scripts)
-  - [yarn dev](#yarn-dev)
-  - [yarn lint](#yarn-lint)
-  - [yarn build](#yarn-build)
-  - [yarn build-watch](#yarn-build-watch)
-  - [yarn start](#yarn-start)
-  - [yarn test-watch](#yarn-test-watch)
-  - [yarn test](#yarn-test)
-  - [yarn ios](#yarn-ios)
-  - [yarn android](#yarn-android)
+  * [yarn dev](#yarn-dev)
+  * [yarn lint](#yarn-lint)
+  * [yarn build](#yarn-build)
+  * [yarn build-watch](#yarn-build-watch)
+  * [yarn start](#yarn-start)
+  * [yarn test-watch](#yarn-test-watch)
+  * [yarn test](#yarn-test)
+  * [yarn ios](#yarn-ios)
+  * [yarn android](#yarn-android)
 - [Integrations](#integrations)
-  - [AppCenter](#appcenter)
-  - [Sentry](#sentry)
-    - [Organization short name](#organization-short-name)
-    - [Project short name](#project-short-name)
-    - [Project ID](#project-id)
+  * [AppCenter](#appcenter)
+  * [Sentry](#sentry)
+    + [Organization short name](#organization-short-name)
+    + [Project short name](#project-short-name)
+    + [Project ID](#project-id)
 - [Delivery & Deployment](#delivery---deployment)
-  - [URL Scheme](#url-scheme)
-  - [Package name](#package-name)
-  - [Android Release Build](#android-release-build)
+  * [URL Scheme](#url-scheme)
+  * [Package name](#package-name)
+  * [Android Release Build](#android-release-build)
+    + [Gradle configuration used:](#gradle-configuration-used-)
+    + [Scripts](#scripts-1)
 - [Debugging](#debugging)
 - [Release](#release)
 - [Environment Variables](#environment-variables)
-  - [Configuring Packager IP Address](#configuring-packager-ip-address)
+  * [Configuring Packager IP Address](#configuring-packager-ip-address)
 - [Troubleshooting](#troubleshooting)
-  - [Networking](#networking)
-  - [iOS Simulator won't open](#ios-simulator-won-t-open)
+  * [Networking](#networking)
+  * [iOS Simulator won't open](#ios-simulator-won-t-open)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -94,6 +102,61 @@ This project uses Apollo for state management as well as endpoint to the GraphQL
 Learn more about our implementation:
 
 - **[Apollo implementation](Apollo.md)**
+
+# Configuration file `.env`
+
+The app uses **[`react-native-config`](https://github.com/luggit/react-native-config)** to store variables. Note that this isn't **[super safe](https://rammic.github.io/2015/07/28/hiding-secrets-in-android-apps/)**, so avoid putting sensitive information like keystore password there.
+
+To run the app's features like `react-native-maps`, configure the variables in the root `.env` file:
+
+    APP_NAME=RnEjectSanity
+    API_URL=https://api.github.com/graphql
+    APP_PREFIX=rninit://
+    ANDROID_VERSION_NAME=0.0.1
+    ANDROID_VERSION_CODE=1
+    IOS_VERSION=0.0.1
+    GOOGLE_MAPS_API_KEY=
+    FACEBOOK_APP_ID=
+    FACEBOOK_DISPLAY_NAME=ReactNativeInitBoilerplate
+    SENTRY_URI=https://yourID.sentry.io/token
+
+## Usage
+
+### Native projects
+
+See **[documentation](https://github.com/luggit/react-native-config)**. The above variables are used in native iOS and Android projects, like `APP_NAME`, in `AndroidManifest.xml` and `Info.plist` respectivly.
+
+### React-Native TypeScript
+
+The interface (below) and **`source//config/CrossConfigReader.ts`** allows you to use strictly typed configuration values in the RN project. For example `SentryUtility.ts`:
+
+    import CrossConfigReader from '../config/CrossConfigReader';
+    ...
+    Sentry.config(
+            CrossConfigReader.GetEnv().SENTRY_URI
+          ).install();
+
+## Add key
+
+We love typed code. That's we use TypeScript. However, to achive this every new key needs to be added in two places:
+
+### `.env`
+
+Obviously, add your key value pair below the existing keys in the root `.env` file, e.g:
+
+    MY_KEY=MyTokenOrSomething
+
+### TypeScript interface `IEnv.ts`
+
+The interface `./source/IEnv.ts` provides type mapping for your key. You can provide JS Doc comment too if you like.
+
+    export interface IEnv {
+    	...
+	   /**
+	   * Tells the user what year it is
+	   */
+    	MY_KEY: string;
+    }
 
 # Project resources
 

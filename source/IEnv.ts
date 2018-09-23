@@ -16,4 +16,15 @@ export interface IEnv {
   APP_PREFIX: string;
   GOOGLE_MAPS_API_KEY: string;
   SENTRY_URI: string;
+  FACEBOOK_APP_ID: string;
+  FACEBOOK_DISPLAY_NAME: string;
+  /**
+   * The Android numeric version code. Must be integer
+   */
+  ANDROID_VERSION_CODE: number;
+  /**
+   * The android string version code, e.g "1.0"
+   */
+  ANDROID_VERSION_NAME: string;
+  IOS_VERSION: string;
 }

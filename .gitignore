@@ -135,3 +135,6 @@ ios/Pods/
 
 # Podfile versions
 ios/Podfile.lock
+
+# Environment
+.env.local
