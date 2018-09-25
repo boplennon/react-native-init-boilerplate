@@ -20,13 +20,17 @@ ShallowWrapper {
       "children": <UNDEFINED>
         <UNDEFINED
           style={
-            Object {
-              "flex": 1,
-              "justifyContent": "space-between",
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 20,
-            }
+            Array [
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 20,
+              },
+            ]
           }
         >
           <CrossLabel
@@ -124,9 +128,6 @@ ShallowWrapper {
       "style": Object {
         "flex": 1,
         "justifyContent": "space-between",
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 20,
       },
     },
     "ref": null,
@@ -137,13 +138,17 @@ ShallowWrapper {
       "props": Object {
         "children": <UNDEFINED
           style={
-            Object {
-              "flex": 1,
-              "justifyContent": "space-between",
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 20,
-            }
+            Array [
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 20,
+              },
+            ]
           }
         >
           <CrossLabel
@@ -336,13 +341,17 @@ ShallowWrapper {
               - 1.0.0-rc5 react-native-google-signin
             </CrossLabel>,
           ],
-          "style": Object {
-            "flex": 1,
-            "justifyContent": "space-between",
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 20,
-          },
+          "style": Array [
+            Object {
+              "flex": 1,
+              "justifyContent": "space-between",
+            },
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 20,
+            },
+          ],
         },
         "ref": null,
         "rendered": Array [
@@ -579,13 +588,17 @@ ShallowWrapper {
         "children": <UNDEFINED>
           <UNDEFINED
             style={
-              Object {
-                "flex": 1,
-                "justifyContent": "space-between",
-                "paddingLeft": 10,
-                "paddingRight": 10,
-                "paddingTop": 20,
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                  "paddingTop": 20,
+                },
+              ]
             }
           >
             <CrossLabel
@@ -683,9 +696,6 @@ ShallowWrapper {
         "style": Object {
           "flex": 1,
           "justifyContent": "space-between",
-          "paddingLeft": 10,
-          "paddingRight": 10,
-          "paddingTop": 20,
         },
       },
       "ref": null,
@@ -696,13 +706,17 @@ ShallowWrapper {
         "props": Object {
           "children": <UNDEFINED
             style={
-              Object {
-                "flex": 1,
-                "justifyContent": "space-between",
-                "paddingLeft": 10,
-                "paddingRight": 10,
-                "paddingTop": 20,
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                  "paddingTop": 20,
+                },
+              ]
             }
           >
             <CrossLabel
@@ -895,13 +909,17 @@ ShallowWrapper {
                 - 1.0.0-rc5 react-native-google-signin
               </CrossLabel>,
             ],
-            "style": Object {
-              "flex": 1,
-              "justifyContent": "space-between",
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 20,
-            },
+            "style": Array [
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 20,
+              },
+            ],
           },
           "ref": null,
           "rendered": Array [

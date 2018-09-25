@@ -1,8 +1,7 @@
 import React from 'react';
 import CrossApolloClient from './CrossApolloClient';
-import { Button, View } from 'react-native';
+import { Button } from 'react-native';
 import TestRenderer from 'react-test-renderer';
-import styles from '../styles';
 import CrossBusyIndicator from '../core/CrossBusyIndicator';
 
 jest.unmock('react-native');

@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { ScrollView, Text, View, Linking } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import { CrossTabStatelessComponent } from '../ReactNavigator';
+import { CrossTabStatelessComponent } from '../CrossNavigator';
 import styles, { TabIconSize } from '../styles';
 import CrossLabel from '../core/CrossLabel';
 
 export const HomeScreen: CrossTabStatelessComponent = () => (
   <View style={styles.container}>
     <ScrollView>
-      <View style={styles.container}>
+      <View style={[styles.container, styles.paddingDefault]}>
         <CrossLabel
           style={{ fontSize: 16, color: 'black', fontWeight: 'bold' }}
         >

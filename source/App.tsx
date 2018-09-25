@@ -14,7 +14,7 @@ import { Provider as PaperProvider } from 'react-native-paper';
 import SentryUtility from './sentry/SentryUtility';
 import CrossConfigReader from './config/CrossConfigReader';
 import CrossApolloClient from './apollo/CrossApolloClient';
-import ReactNavigator, { GetAppUri } from './ReactNavigator';
+import CrossNavigator, { GetAppUri } from './CrossNavigator';
 
 if (!__DEV__) SentryUtility.install();
 
@@ -23,7 +23,7 @@ export default class App extends React.Component {
     return (
       <CrossApolloClient uri={GetAppUri()}>
         <PaperProvider>
-          <ReactNavigator uriPrefix={config.APP_PREFIX} />
+          <CrossNavigator uriPrefix={config.APP_PREFIX} />
         </PaperProvider>
       </CrossApolloClient>
     );

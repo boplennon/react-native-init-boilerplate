@@ -11,6 +11,7 @@ import { HomeScreen } from './home/HomeScreen';
 import { MapScreen } from './map/MapScreen';
 import { Colors } from './styles';
 import CrossConfigReader from './config/CrossConfigReader';
+import ProfileScreen from './profile/ProfileScreen';
 
 const tabBarOptions: TabConfig = {
   activeTintColor: Colors.CrossYellow,
@@ -40,11 +41,12 @@ export interface CrossTabStatelessComponent extends React.StatelessComponent {
 const routeConfig: NavigationRouteConfigMap = {
   Home: HomeScreen,
   Map: MapScreen,
+  Profile: ProfileScreen,
 };
 
-export const ReactNavigator = createMaterialBottomTabNavigator(
+export const CrossNavigator = createMaterialBottomTabNavigator(
   routeConfig,
   tabBarOptions
 );
 
-export default ReactNavigator;
+export default CrossNavigator;

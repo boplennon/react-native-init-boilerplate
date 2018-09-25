@@ -32,9 +32,6 @@ ShallowWrapper {
         Object {
           "flex": 1,
           "justifyContent": "space-between",
-          "paddingLeft": 10,
-          "paddingRight": 10,
-          "paddingTop": 20,
         },
         Object {
           "marginBottom": 1,
@@ -75,9 +72,6 @@ ShallowWrapper {
           Object {
             "flex": 1,
             "justifyContent": "space-between",
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 20,
           },
           Object {
             "marginBottom": 1,

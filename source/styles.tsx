@@ -72,9 +72,6 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'space-between',
-    paddingTop: 20,
-    paddingLeft: 10,
-    paddingRight: 10,
   },
   buttonList: {
     flex: 1,
@@ -93,7 +90,9 @@ export const styles = StyleSheet.create({
     height: 45,
   },
   paddingDefault: {
-    padding: 10,
+    paddingTop: 20,
+    paddingLeft: 10,
+    paddingRight: 10,
   },
   label: {
     color: 'gray',

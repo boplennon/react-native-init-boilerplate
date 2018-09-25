@@ -6,10 +6,11 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "ts-init": "yarn tsc --init --pretty --jsx react && touch rn-cli.config.js && yarn add -D @types/react @types/react-native ts-jest  @types/jest @types/react @types/react-native @types/react-test-renderer",
     "tsw": "tsc --watch",
-    "lint": "./lint.sh",
-    "clean": "rm -rf build",
+    "lint": "./lint.sh && yarn build",
+    "clean": "./clean.sh && yarn build",
+    "read-sh": "sudo find . -name \"*.sh\" | xargs chmod u+x",
     "install-globals": "yarn global add create-react-native-app react-native-cli typescript tslint prettier codecov",
-    "android-run": "react-native run-android",
+    "android-run": "yarn clean && react-native run-android",
     "android-run-release": "react-native run-android --variant=release",
     "android-release": "yarn android-reverse && yarn android-run-release",
     "android": "yarn android-reverse && yarn android-run",
@@ -36,7 +37,7 @@
     "build": "tsc",
     "build-watch": "tsc --watch",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
-    "dev": "yarn install && yarn install-globals && pod-install && yarn lint && yarn build && yarn test"
+    "dev": "yarn install && yarn install-globals && yarn clean && pod-install && yarn lint && yarn build && yarn test"
   },
   "dependencies": {
     "apollo-boost": "^0.1.16",
@@ -57,7 +58,6 @@
     "react-native-config": "^0.11.5",
     "react-native-elements": "^0.19.1",
     "react-native-fbsdk": "^0.8.0",
-    "react-native-google-signin": "^1.0.0-rc5",
     "react-native-indicators": "^0.13.0",
     "react-native-maps": "^0.21.0",
     "react-native-paper": "^2.0.1",

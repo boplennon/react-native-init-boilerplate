@@ -8,10 +8,10 @@ Acts as a boilerplate for ejected projects at [Crossplatform](http://www.crosspl
 
 Below you'll find information about performing common tasks.
 
-**Remarks:** 
+**Remarks:**
 
-* You need to **[configure app variables ](#configuration-file--env-)** to use some features.
-* Always run **[`yarn dev`](#yarn-dev)** after pull / clone to install global dependencies
+- You need to **[configure app variables ](#configuration-file--env-)** to use some features.
+- Always run **[`yarn dev`](#yarn-dev)** after pull / clone to install global dependencies
 
 ---
 
@@ -27,61 +27,62 @@ Below you'll find information about performing common tasks.
 [![Twitter Follow](https://img.shields.io/twitter/follow/crossplatformse.svg?style=social)](https://twitter.com/crossplatformse)
 
 ## Table of Contents
+
 - [React-Native Init Boilerplate](#react-native-init-boilerplate)
-  * [Table of Contents](#table-of-contents)
-  * [React-Native 0.57.0](#react-native-0570)
-  * [Can not run ShellScript](#can-not-run-shellscript)
-  * [GraphQL Apollo implementation](#graphql-apollo-implementation)
+  - [Table of Contents](#table-of-contents)
+  - [React-Native 0.57.0](#react-native-0570)
+  - [Can not run ShellScript](#can-not-run-shellscript)
+  - [GraphQL Apollo implementation](#graphql-apollo-implementation)
 - [Configuration file `.env`](#configuration-file--env-)
-  * [Usage](#usage)
-    + [Native projects](#native-projects)
-    + [React-Native TypeScript](#react-native-typescript)
-  * [Add key](#add-key)
-    + [`.env`](#-env-)
-    + [TypeScript interface `IEnv.ts`](#typescript-interface--ienvts-)
+  - [Usage](#usage)
+    - [Native projects](#native-projects)
+    - [React-Native TypeScript](#react-native-typescript)
+  - [Add key](#add-key)
+    - [`.env`](#-env-)
+    - [TypeScript interface `IEnv.ts`](#typescript-interface--ienvts-)
 - [Project resources](#project-resources)
-  * [Insights Sentry](#insights-sentry)
-  * [Backlog & kanban](#backlog---kanban)
-  * [Build server and deploy: VS App Center](#build-server-and-deploy--vs-app-center)
-  * [Source Control: GitHub](#source-control--github)
+  - [Insights Sentry](#insights-sentry)
+  - [Backlog & kanban](#backlog---kanban)
+  - [Build server and deploy: VS App Center](#build-server-and-deploy--vs-app-center)
+  - [Source Control: GitHub](#source-control--github)
 - [Tools](#tools)
-  * [Java](#java)
-  * [Git](#git)
-    + [Git Credential Manager](#git-credential-manager)
-  * [Node](#node)
-  * [Yarn](#yarn)
-  * [Visual Studio Code](#visual-studio-code)
-  * [Bash on Windows](#bash-on-windows)
+  - [Java](#java)
+  - [Git](#git)
+    - [Git Credential Manager](#git-credential-manager)
+  - [Node](#node)
+  - [Yarn](#yarn)
+  - [Visual Studio Code](#visual-studio-code)
+  - [Bash on Windows](#bash-on-windows)
 - [Installation](#installation)
 - [Scripts](#scripts)
-  * [yarn dev](#yarn-dev)
-  * [yarn lint](#yarn-lint)
-  * [yarn build](#yarn-build)
-  * [yarn build-watch](#yarn-build-watch)
-  * [yarn start](#yarn-start)
-  * [yarn test-watch](#yarn-test-watch)
-  * [yarn test](#yarn-test)
-  * [yarn ios](#yarn-ios)
-  * [yarn android](#yarn-android)
+  - [yarn dev](#yarn-dev)
+  - [yarn lint](#yarn-lint)
+  - [yarn build](#yarn-build)
+  - [yarn build-watch](#yarn-build-watch)
+  - [yarn start](#yarn-start)
+  - [yarn test-watch](#yarn-test-watch)
+  - [yarn test](#yarn-test)
+  - [yarn ios](#yarn-ios)
+  - [yarn android](#yarn-android)
 - [Integrations](#integrations)
-  * [AppCenter](#appcenter)
-  * [Sentry](#sentry)
-    + [Organization short name](#organization-short-name)
-    + [Project short name](#project-short-name)
-    + [Project ID](#project-id)
+  - [AppCenter](#appcenter)
+  - [Sentry](#sentry)
+    - [Organization short name](#organization-short-name)
+    - [Project short name](#project-short-name)
+    - [Project ID](#project-id)
 - [Delivery & Deployment](#delivery---deployment)
-  * [URL Scheme](#url-scheme)
-  * [Package name](#package-name)
-  * [Android Release Build](#android-release-build)
-    + [Gradle configuration used:](#gradle-configuration-used-)
-    + [Scripts](#scripts-1)
+  - [URL Scheme](#url-scheme)
+  - [Package name](#package-name)
+  - [Android Release Build](#android-release-build)
+    - [Gradle configuration used:](#gradle-configuration-used-)
+    - [Scripts](#scripts-1)
 - [Debugging](#debugging)
 - [Release](#release)
 - [Environment Variables](#environment-variables)
-  * [Configuring Packager IP Address](#configuring-packager-ip-address)
+  - [Configuring Packager IP Address](#configuring-packager-ip-address)
 - [Troubleshooting](#troubleshooting)
-  * [Networking](#networking)
-  * [iOS Simulator won't open](#ios-simulator-won-t-open)
+  - [Networking](#networking)
+  - [iOS Simulator won't open](#ios-simulator-won-t-open)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -93,7 +94,11 @@ This project uses latest RN release by default meaning latest metro bundler, bab
 
 Adjust the rights on SH-files for your user (in root). Remarks: we use **[bash terminal in VS Code](#bash-on-windows)**
 
-> sudo chmod u+x ./\*\*.sh
+    yarn read-sh
+
+Or manually:
+
+> sudo find . -name "\*.sh" | xargs chmod u+x
 
 ## GraphQL Apollo implementation
 
@@ -152,9 +157,9 @@ The interface `./source/IEnv.ts` provides type mapping for your key. You can pro
 
     export interface IEnv {
     	...
-	   /**
-	   * Tells the user what year it is
-	   */
+       /**
+       * Tells the user what year it is
+       */
     	MY_KEY: string;
     }
 
