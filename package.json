@@ -10,7 +10,7 @@
     "clean": "./clean.sh && yarn build",
     "read-sh": "sudo find . -name \"*.sh\" | xargs chmod u+x",
     "install-globals": "yarn global add create-react-native-app react-native-cli typescript tslint prettier codecov",
-    "android-run": "yarn clean && react-native run-android",
+    "android-run": "react-native run-android",
     "android-run-release": "react-native run-android --variant=release",
     "android-release": "yarn android-reverse && yarn android-run-release",
     "android": "yarn android-reverse && yarn android-run",

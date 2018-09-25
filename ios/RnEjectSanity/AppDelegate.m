@@ -22,10 +22,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  // Read config
+  // Google Maps: key comes from .env
   NSString *apiUrl = [ReactNativeConfig envFor:@"GOOGLE_MAPS_API_KEY"];
-
-  // add the api key obtained from Google Console
   [GMSServices provideAPIKey:apiUrl];
   
   // Facebook SDK
@@ -53,7 +51,7 @@ RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
   return YES;
 }
 
-// Facebook SDK - handle deep linking
+// Handle deep linking
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
             sourceApplication:(NSString *)sourceApplication annotation:(id)annotation

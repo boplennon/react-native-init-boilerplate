@@ -25,7 +25,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb943511545857229</string>
+				<string>__RN_CONFIG_FACEBOOK_URL_SCHEME</string>
 			</array>
 		</dict>
 		<dict>

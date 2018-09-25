@@ -23,6 +23,10 @@ export interface IEnv {
   GOOGLE_AUTH_WEBCLIENT_ID: string;
   SENTRY_URI: string;
   FACEBOOK_APP_ID: string;
+  /**
+   * Same as {@link FACEBOOK_APP_ID} but prefixed "fb"
+   */
+  FACEBOOK_URL_SCHEME: string;
   FACEBOOK_DISPLAY_NAME: string;
   /**
    * The Android numeric version code. Must be integer
