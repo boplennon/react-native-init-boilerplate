@@ -54,74 +54,69 @@ ShallowWrapper {
             - 0.57.0 react-native
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://www.typescriptlang.org/"
           >
             - 3.0.3 typescript
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/kulshekhar/ts-jest"
           >
             - 23.1.4 ts-jest
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/getsentry/react-native-sentry"
           >
             - 0.39.0 react-native-sentry
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/react-community/react-native-maps"
           >
             - 0.21.0 react-native-maps
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/react-navigation/"
           >
             - 2.14.2 react-navigation
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://callstack.github.io/react-native-paper/"
           >
             - ^2.0.1 react-native-paper
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/react-navigation/react-navigation-material-bottom-tab-navigator"
           >
             - ^0.4.0 react-navigation-material-bottom-tabs
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/oblador/react-native-vector-icons"
           >
             - 5.0.0 react-native-vector-icons
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/react-native-training/react-native-elements"
           >
             - 0.19.0 react-native-elements
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/apollographql/react-apollo/"
           >
             - 2.1.11 react-apollo
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://graphql.org/graphql-js/"
           >
             - 14.0.2 graphql
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/aws-amplify/amplify-js"
           >
             - 1.1.1 aws-amplify
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/facebook/react-native-fbsdk"
           >
             - 0.8.0 react-native-fbsdk
-          </CrossLabel>
-          <CrossLabel
-            onPress={[Function]}
-          >
-            - 1.0.0-rc5 react-native-google-signin
           </CrossLabel>
         </UNDEFINED>
       </UNDEFINED>,
@@ -172,74 +167,69 @@ ShallowWrapper {
             - 0.57.0 react-native
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://www.typescriptlang.org/"
           >
             - 3.0.3 typescript
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/kulshekhar/ts-jest"
           >
             - 23.1.4 ts-jest
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/getsentry/react-native-sentry"
           >
             - 0.39.0 react-native-sentry
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/react-community/react-native-maps"
           >
             - 0.21.0 react-native-maps
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/react-navigation/"
           >
             - 2.14.2 react-navigation
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://callstack.github.io/react-native-paper/"
           >
             - ^2.0.1 react-native-paper
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/react-navigation/react-navigation-material-bottom-tab-navigator"
           >
             - ^0.4.0 react-navigation-material-bottom-tabs
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/oblador/react-native-vector-icons"
           >
             - 5.0.0 react-native-vector-icons
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/react-native-training/react-native-elements"
           >
             - 0.19.0 react-native-elements
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/apollographql/react-apollo/"
           >
             - 2.1.11 react-apollo
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://graphql.org/graphql-js/"
           >
             - 14.0.2 graphql
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/aws-amplify/amplify-js"
           >
             - 1.1.1 aws-amplify
           </CrossLabel>
           <CrossLabel
-            onPress={[Function]}
+            onPressUrlTarget="https://github.com/facebook/react-native-fbsdk"
           >
             - 0.8.0 react-native-fbsdk
-          </CrossLabel>
-          <CrossLabel
-            onPress={[Function]}
-          >
-            - 1.0.0-rc5 react-native-google-signin
           </CrossLabel>
         </UNDEFINED>,
       },
@@ -271,74 +261,69 @@ ShallowWrapper {
               - 0.57.0 react-native
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://www.typescriptlang.org/"
             >
               - 3.0.3 typescript
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/kulshekhar/ts-jest"
             >
               - 23.1.4 ts-jest
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/getsentry/react-native-sentry"
             >
               - 0.39.0 react-native-sentry
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-community/react-native-maps"
             >
               - 0.21.0 react-native-maps
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-navigation/"
             >
               - 2.14.2 react-navigation
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://callstack.github.io/react-native-paper/"
             >
               - ^2.0.1 react-native-paper
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-navigation/react-navigation-material-bottom-tab-navigator"
             >
               - ^0.4.0 react-navigation-material-bottom-tabs
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/oblador/react-native-vector-icons"
             >
               - 5.0.0 react-native-vector-icons
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-native-training/react-native-elements"
             >
               - 0.19.0 react-native-elements
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/apollographql/react-apollo/"
             >
               - 2.1.11 react-apollo
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://graphql.org/graphql-js/"
             >
               - 14.0.2 graphql
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/aws-amplify/amplify-js"
             >
               - 1.1.1 aws-amplify
             </CrossLabel>,
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/facebook/react-native-fbsdk"
             >
               - 0.8.0 react-native-fbsdk
-            </CrossLabel>,
-            <CrossLabel
-              onPress={[Function]}
-            >
-              - 1.0.0-rc5 react-native-google-signin
             </CrossLabel>,
           ],
           "style": Array [
@@ -410,7 +395,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 3.0.3 typescript",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://www.typescriptlang.org/",
             },
             "ref": null,
             "rendered": "- 3.0.3 typescript",
@@ -422,7 +407,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 23.1.4 ts-jest",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://github.com/kulshekhar/ts-jest",
             },
             "ref": null,
             "rendered": "- 23.1.4 ts-jest",
@@ -434,7 +419,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 0.39.0 react-native-sentry",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://github.com/getsentry/react-native-sentry",
             },
             "ref": null,
             "rendered": "- 0.39.0 react-native-sentry",
@@ -446,7 +431,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 0.21.0 react-native-maps",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://github.com/react-community/react-native-maps",
             },
             "ref": null,
             "rendered": "- 0.21.0 react-native-maps",
@@ -458,7 +443,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 2.14.2 react-navigation",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://github.com/react-navigation/",
             },
             "ref": null,
             "rendered": "- 2.14.2 react-navigation",
@@ -470,7 +455,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- ^2.0.1 react-native-paper",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://callstack.github.io/react-native-paper/",
             },
             "ref": null,
             "rendered": "- ^2.0.1 react-native-paper",
@@ -482,7 +467,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- ^0.4.0 react-navigation-material-bottom-tabs",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://github.com/react-navigation/react-navigation-material-bottom-tab-navigator",
             },
             "ref": null,
             "rendered": "- ^0.4.0 react-navigation-material-bottom-tabs",
@@ -494,7 +479,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 5.0.0 react-native-vector-icons",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://github.com/oblador/react-native-vector-icons",
             },
             "ref": null,
             "rendered": "- 5.0.0 react-native-vector-icons",
@@ -506,7 +491,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 0.19.0 react-native-elements",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://github.com/react-native-training/react-native-elements",
             },
             "ref": null,
             "rendered": "- 0.19.0 react-native-elements",
@@ -518,7 +503,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 2.1.11 react-apollo",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://github.com/apollographql/react-apollo/",
             },
             "ref": null,
             "rendered": "- 2.1.11 react-apollo",
@@ -530,7 +515,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 14.0.2 graphql",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://graphql.org/graphql-js/",
             },
             "ref": null,
             "rendered": "- 14.0.2 graphql",
@@ -542,7 +527,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 1.1.1 aws-amplify",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://github.com/aws-amplify/amplify-js",
             },
             "ref": null,
             "rendered": "- 1.1.1 aws-amplify",
@@ -554,22 +539,10 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "- 0.8.0 react-native-fbsdk",
-              "onPress": [Function],
+              "onPressUrlTarget": "https://github.com/facebook/react-native-fbsdk",
             },
             "ref": null,
             "rendered": "- 0.8.0 react-native-fbsdk",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "- 1.0.0-rc5 react-native-google-signin",
-              "onPress": [Function],
-            },
-            "ref": null,
-            "rendered": "- 1.0.0-rc5 react-native-google-signin",
             "type": [Function],
           },
         ],
@@ -622,74 +595,69 @@ ShallowWrapper {
               - 0.57.0 react-native
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://www.typescriptlang.org/"
             >
               - 3.0.3 typescript
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/kulshekhar/ts-jest"
             >
               - 23.1.4 ts-jest
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/getsentry/react-native-sentry"
             >
               - 0.39.0 react-native-sentry
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-community/react-native-maps"
             >
               - 0.21.0 react-native-maps
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-navigation/"
             >
               - 2.14.2 react-navigation
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://callstack.github.io/react-native-paper/"
             >
               - ^2.0.1 react-native-paper
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-navigation/react-navigation-material-bottom-tab-navigator"
             >
               - ^0.4.0 react-navigation-material-bottom-tabs
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/oblador/react-native-vector-icons"
             >
               - 5.0.0 react-native-vector-icons
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-native-training/react-native-elements"
             >
               - 0.19.0 react-native-elements
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/apollographql/react-apollo/"
             >
               - 2.1.11 react-apollo
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://graphql.org/graphql-js/"
             >
               - 14.0.2 graphql
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/aws-amplify/amplify-js"
             >
               - 1.1.1 aws-amplify
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/facebook/react-native-fbsdk"
             >
               - 0.8.0 react-native-fbsdk
-            </CrossLabel>
-            <CrossLabel
-              onPress={[Function]}
-            >
-              - 1.0.0-rc5 react-native-google-signin
             </CrossLabel>
           </UNDEFINED>
         </UNDEFINED>,
@@ -740,74 +708,69 @@ ShallowWrapper {
               - 0.57.0 react-native
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://www.typescriptlang.org/"
             >
               - 3.0.3 typescript
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/kulshekhar/ts-jest"
             >
               - 23.1.4 ts-jest
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/getsentry/react-native-sentry"
             >
               - 0.39.0 react-native-sentry
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-community/react-native-maps"
             >
               - 0.21.0 react-native-maps
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-navigation/"
             >
               - 2.14.2 react-navigation
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://callstack.github.io/react-native-paper/"
             >
               - ^2.0.1 react-native-paper
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-navigation/react-navigation-material-bottom-tab-navigator"
             >
               - ^0.4.0 react-navigation-material-bottom-tabs
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/oblador/react-native-vector-icons"
             >
               - 5.0.0 react-native-vector-icons
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/react-native-training/react-native-elements"
             >
               - 0.19.0 react-native-elements
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/apollographql/react-apollo/"
             >
               - 2.1.11 react-apollo
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://graphql.org/graphql-js/"
             >
               - 14.0.2 graphql
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/aws-amplify/amplify-js"
             >
               - 1.1.1 aws-amplify
             </CrossLabel>
             <CrossLabel
-              onPress={[Function]}
+              onPressUrlTarget="https://github.com/facebook/react-native-fbsdk"
             >
               - 0.8.0 react-native-fbsdk
-            </CrossLabel>
-            <CrossLabel
-              onPress={[Function]}
-            >
-              - 1.0.0-rc5 react-native-google-signin
             </CrossLabel>
           </UNDEFINED>,
         },
@@ -839,74 +802,69 @@ ShallowWrapper {
                 - 0.57.0 react-native
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://www.typescriptlang.org/"
               >
                 - 3.0.3 typescript
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://github.com/kulshekhar/ts-jest"
               >
                 - 23.1.4 ts-jest
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://github.com/getsentry/react-native-sentry"
               >
                 - 0.39.0 react-native-sentry
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://github.com/react-community/react-native-maps"
               >
                 - 0.21.0 react-native-maps
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://github.com/react-navigation/"
               >
                 - 2.14.2 react-navigation
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://callstack.github.io/react-native-paper/"
               >
                 - ^2.0.1 react-native-paper
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://github.com/react-navigation/react-navigation-material-bottom-tab-navigator"
               >
                 - ^0.4.0 react-navigation-material-bottom-tabs
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://github.com/oblador/react-native-vector-icons"
               >
                 - 5.0.0 react-native-vector-icons
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://github.com/react-native-training/react-native-elements"
               >
                 - 0.19.0 react-native-elements
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://github.com/apollographql/react-apollo/"
               >
                 - 2.1.11 react-apollo
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://graphql.org/graphql-js/"
               >
                 - 14.0.2 graphql
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://github.com/aws-amplify/amplify-js"
               >
                 - 1.1.1 aws-amplify
               </CrossLabel>,
               <CrossLabel
-                onPress={[Function]}
+                onPressUrlTarget="https://github.com/facebook/react-native-fbsdk"
               >
                 - 0.8.0 react-native-fbsdk
-              </CrossLabel>,
-              <CrossLabel
-                onPress={[Function]}
-              >
-                - 1.0.0-rc5 react-native-google-signin
               </CrossLabel>,
             ],
             "style": Array [
@@ -978,7 +936,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 3.0.3 typescript",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://www.typescriptlang.org/",
               },
               "ref": null,
               "rendered": "- 3.0.3 typescript",
@@ -990,7 +948,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 23.1.4 ts-jest",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://github.com/kulshekhar/ts-jest",
               },
               "ref": null,
               "rendered": "- 23.1.4 ts-jest",
@@ -1002,7 +960,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 0.39.0 react-native-sentry",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://github.com/getsentry/react-native-sentry",
               },
               "ref": null,
               "rendered": "- 0.39.0 react-native-sentry",
@@ -1014,7 +972,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 0.21.0 react-native-maps",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://github.com/react-community/react-native-maps",
               },
               "ref": null,
               "rendered": "- 0.21.0 react-native-maps",
@@ -1026,7 +984,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 2.14.2 react-navigation",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://github.com/react-navigation/",
               },
               "ref": null,
               "rendered": "- 2.14.2 react-navigation",
@@ -1038,7 +996,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- ^2.0.1 react-native-paper",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://callstack.github.io/react-native-paper/",
               },
               "ref": null,
               "rendered": "- ^2.0.1 react-native-paper",
@@ -1050,7 +1008,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- ^0.4.0 react-navigation-material-bottom-tabs",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://github.com/react-navigation/react-navigation-material-bottom-tab-navigator",
               },
               "ref": null,
               "rendered": "- ^0.4.0 react-navigation-material-bottom-tabs",
@@ -1062,7 +1020,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 5.0.0 react-native-vector-icons",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://github.com/oblador/react-native-vector-icons",
               },
               "ref": null,
               "rendered": "- 5.0.0 react-native-vector-icons",
@@ -1074,7 +1032,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 0.19.0 react-native-elements",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://github.com/react-native-training/react-native-elements",
               },
               "ref": null,
               "rendered": "- 0.19.0 react-native-elements",
@@ -1086,7 +1044,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 2.1.11 react-apollo",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://github.com/apollographql/react-apollo/",
               },
               "ref": null,
               "rendered": "- 2.1.11 react-apollo",
@@ -1098,7 +1056,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 14.0.2 graphql",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://graphql.org/graphql-js/",
               },
               "ref": null,
               "rendered": "- 14.0.2 graphql",
@@ -1110,7 +1068,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 1.1.1 aws-amplify",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://github.com/aws-amplify/amplify-js",
               },
               "ref": null,
               "rendered": "- 1.1.1 aws-amplify",
@@ -1122,22 +1080,10 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "- 0.8.0 react-native-fbsdk",
-                "onPress": [Function],
+                "onPressUrlTarget": "https://github.com/facebook/react-native-fbsdk",
               },
               "ref": null,
               "rendered": "- 0.8.0 react-native-fbsdk",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "- 1.0.0-rc5 react-native-google-signin",
-                "onPress": [Function],
-              },
-              "ref": null,
-              "rendered": "- 1.0.0-rc5 react-native-google-signin",
               "type": [Function],
             },
           ],

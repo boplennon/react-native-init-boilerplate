@@ -23,12 +23,6 @@ ShallowWrapper {
     "props": Object {
       "children": <UNDEFINED
         onPress={[Function]}
-        style={
-          Object {
-            "color": "blue",
-            "fontWeight": "bold",
-          }
-        }
       >
         Click me
       </UNDEFINED>,
@@ -45,10 +39,7 @@ ShallowWrapper {
       "props": Object {
         "children": "Click me",
         "onPress": [Function],
-        "style": Object {
-          "color": "blue",
-          "fontWeight": "bold",
-        },
+        "style": undefined,
       },
       "ref": null,
       "rendered": "Click me",
@@ -64,12 +55,6 @@ ShallowWrapper {
       "props": Object {
         "children": <UNDEFINED
           onPress={[Function]}
-          style={
-            Object {
-              "color": "blue",
-              "fontWeight": "bold",
-            }
-          }
         >
           Click me
         </UNDEFINED>,
@@ -86,10 +71,7 @@ ShallowWrapper {
         "props": Object {
           "children": "Click me",
           "onPress": [Function],
-          "style": Object {
-            "color": "blue",
-            "fontWeight": "bold",
-          },
+          "style": undefined,
         },
         "ref": null,
         "rendered": "Click me",
@@ -143,12 +125,6 @@ ShallowWrapper {
     "props": Object {
       "children": <UNDEFINED
         onPress={[MockFunction]}
-        style={
-          Object {
-            "color": "blue",
-            "fontWeight": "bold",
-          }
-        }
       >
         Hello
       </UNDEFINED>,
@@ -165,10 +141,7 @@ ShallowWrapper {
       "props": Object {
         "children": "Hello",
         "onPress": [MockFunction],
-        "style": Object {
-          "color": "blue",
-          "fontWeight": "bold",
-        },
+        "style": undefined,
       },
       "ref": null,
       "rendered": "Hello",
@@ -184,12 +157,6 @@ ShallowWrapper {
       "props": Object {
         "children": <UNDEFINED
           onPress={[MockFunction]}
-          style={
-            Object {
-              "color": "blue",
-              "fontWeight": "bold",
-            }
-          }
         >
           Hello
         </UNDEFINED>,
@@ -206,10 +173,7 @@ ShallowWrapper {
         "props": Object {
           "children": "Hello",
           "onPress": [MockFunction],
-          "style": Object {
-            "color": "blue",
-            "fontWeight": "bold",
-          },
+          "style": undefined,
         },
         "ref": null,
         "rendered": "Hello",
