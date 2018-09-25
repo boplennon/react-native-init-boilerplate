@@ -18,7 +18,7 @@ const wrapper = (busy: boolean, error: Error) =>
   );
 
 describe('components', () => {
-  describe('CrossApolloFeedback', () => {
+  describe('<CrossApolloFeedback />', () => {
     it('should render self and subcomponents', () => {
       const json = wrapper(false, null).toJSON();
       expect(json).toMatchSnapshot();

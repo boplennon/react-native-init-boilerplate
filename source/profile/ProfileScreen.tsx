@@ -5,6 +5,8 @@ import { View, Text } from 'react-native';
 import { CrossTabStatelessComponent } from '../CrossNavigator';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
+jest.unmock('react-native');
+
 export const ProfileScreen:CrossTabStatelessComponent = () => (
   <View style={[styles.container, styles.paddingDefault]}>
     <CrossFbLoginButton />

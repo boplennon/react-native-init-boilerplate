@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components <ProfileScreen /> renders correctly with defaults 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "justifyContent": "space-between",
+      },
+      Object {
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 20,
+      },
+    ]
+  }
+>
+  <Button
+    onLoginFinished={[Function]}
+    onLogoutFinished={[Function]}
+    style={
+      Object {
+        "height": 45,
+        "marginBottom": 10,
+        "marginRight": 10,
+        "marginTop": 10,
+      }
+    }
+  />
+</View>
+`;

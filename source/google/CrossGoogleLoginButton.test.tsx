@@ -1,43 +1,36 @@
 /// <reference types="jest"/>
 import React from 'react';
-import { shallow } from 'enzyme';
+import TestRenderer from 'react-test-renderer';
 import { SocialIcon } from 'react-native-elements';
 import CrossGoogleLoginButton from './CrossGoogleLoginButton';
 
 jest.unmock('react-native');
-jest.unmock('react-native-elements');
 
 function setup() {
-  // @ts-ignore - Enzyme TypeScript issues
-  const enzymeWrapper = shallow(
-    <CrossGoogleLoginButton />
-  );
+  const wrapper = TestRenderer.create(<CrossGoogleLoginButton />);
 
   return {
-    enzymeWrapper,
+    wrapper,
   };
 }
 
 describe('components', () => {
-  describe('GoogleLogin', () => {
-    const { enzymeWrapper } = setup();
-    const loginBase = enzymeWrapper;
+  describe('<CrossGoogleLoginButton />', () => {
+    const { wrapper } = setup();
+    const loginBase = wrapper;
 
     it('should match snapshot', () => {
-      expect(loginBase).toMatchSnapshot();
+      expect(loginBase.toJSON()).toMatchSnapshot();
     });
 
     it('type should be google-plus-official', () => {
-      const buttonGoogle = loginBase
-        .find(SocialIcon)
-        .first()
-        .props();
-      expect(buttonGoogle.type).toEqual('google-plus-official');
+      const buttonGoogle = loginBase.root.findByType(SocialIcon);
+      expect(buttonGoogle.props.type).toEqual('google-plus-official');
     });
 
     it('should be able to press', () => {
-      const buttonGoogle = loginBase.find(SocialIcon).first();
-      buttonGoogle.simulate('onPress');
+      const buttonGoogle = loginBase.root.findByType(SocialIcon);
+      buttonGoogle.props.onPress();
     });
   });
 });

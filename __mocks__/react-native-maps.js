@@ -1,12 +1,14 @@
-  // Mock the map library
-  module.exports = {
-    MapView: 'View',
-    Marker: 'View',
-    Callout: 'View',
-    Ploygon: 'View',
-    Polyline: 'View',
-    Circle: 'View',
-    Overlay: 'View',
-  };
+// Mock the map library
+module.exports = ({
+  MapView: 'View',
+  Marker: 'View',
+  Callout: 'View',
+  Ploygon: 'View',
+  Polyline: 'View',
+  Circle: 'View',
+  Overlay: 'View',
+  PROVIDER_GOOGLE: '',
+  MarkerAnimated: 'View'
+});
 
-  jest.mock('react-native-maps', () => 'View');
+export default 'View';

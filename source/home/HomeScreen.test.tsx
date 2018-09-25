@@ -1,20 +1,18 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-
 import HomeScreen from './HomeScreen';
+import TestRenderer from 'react-test-renderer';
 
 function setup() {
-  return shallow(
-    // @ts-ignore - Enzyme TypeScript issues
+  return TestRenderer.create(
     <HomeScreen />
   );
 }
 
 describe('components', () => {
-  describe('HomeScreen', () => {
+  describe('<HomeScreen />', () => {
     it('renders correctly with defaults', () => {
       const wrapper = setup();
-      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.toJSON()).toMatchSnapshot();
     });
   });
 });

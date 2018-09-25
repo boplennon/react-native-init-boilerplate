@@ -1,19 +1,14 @@
 // core/components/BusyIndicator.test
 /// <reference types="jest"/>
 import React from 'react';
-import { shallow } from 'enzyme';
 import CrossLabel from './CrossLabel';
 import _ from 'lodash';
+import TestRenderer from 'react-test-renderer';
 
 jest.unmock('react-native');
 
-function setup(text:string, onPress?: () => void) {
-
-  const enzymeWrapper = shallow(<CrossLabel onPress={!_.isNil(onPress)?onPress:jest.fn()}>{text}</CrossLabel>);
-
-  return {
-    enzymeWrapper,
-  };
+function setup(text:string, targetUri?: string) {
+  return TestRenderer.create(<CrossLabel onPressUrlTarget={targetUri}>{text}</CrossLabel>);
 }
 
 describe('components', () => {
@@ -23,15 +18,15 @@ describe('components', () => {
    *    const busyProps = enzymeWrapper.find(BusyIndicator).props();
    *    expect(busyProps.isBusy).toBe(false);
    */
-  describe('CrossLabel', () => {
+  describe('<CrossLabel />', () => {
     it('Without onPress should render', () => {
-      const { enzymeWrapper } = setup('Hello');
-      expect(enzymeWrapper).toMatchSnapshot();
+      const wrapper = setup('Hello', null);
+      expect(wrapper.toJSON()).toMatchSnapshot();
     });
 
-    it('With onPress should have link style', () => {
-        const { enzymeWrapper } = setup('Click me', () =>{});
-        expect(enzymeWrapper).toMatchSnapshot();
+    it('With onPressUrlTarget render', () => {
+        const wrapper = setup('Click me', 'https://www.crossplatform.se/');
+        expect(wrapper.toJSON()).toMatchSnapshot();
         // const text = enzymeWrapper.find(CrossLabel).at(0);
         // // @ts-ignore
         // expect(text.props().style).toEqual(styles.link);

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components CrossApolloFeedback should render self and subcomponents 1`] = `
+exports[`components <CrossApolloFeedback /> should render self and subcomponents 1`] = `
 <View
   style={
     Object {

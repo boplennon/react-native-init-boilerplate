@@ -1,18 +1,13 @@
 // core/components/BusyIndicator.test
 /// <reference types="jest"/>
 import React from 'react';
-import { shallow } from 'enzyme';
 import CrossButton from './CrossButton';
+import TestRenderer from 'react-test-renderer';
 
-jest.unmock('react-native');
-
-function setup(iconName:string, title:string) {
-
-  const enzymeWrapper = shallow(<CrossButton iconName={iconName} title={title} onPress={jest.fn()}/>);
-
-  return {
-    enzymeWrapper,
-  };
+function setup(iconName: string, title: string) {
+  return TestRenderer.create(
+    <CrossButton iconName={iconName} title={title} onPress={jest.fn()} />
+  );
 }
 
 describe('components', () => {
@@ -22,15 +17,15 @@ describe('components', () => {
    *    const busyProps = enzymeWrapper.find(BusyIndicator).props();
    *    expect(busyProps.isBusy).toBe(false);
    */
-  describe('CrossButton', () => {
+  describe('<CrossButton />', () => {
     it('With title should render', () => {
-      const { enzymeWrapper } = setup('home', 'home');
-      expect(enzymeWrapper).toMatchSnapshot();
+      const wrapper = setup('home', 'home');
+      expect(wrapper.toJSON()).toMatchSnapshot();
     });
 
     it('Without title should renders', () => {
-        const { enzymeWrapper } = setup('map', null);
-        expect(enzymeWrapper).toMatchSnapshot();
-      });
+      const wrapper = setup('map', null);
+      expect(wrapper).toMatchSnapshot();
+    });
   });
 });

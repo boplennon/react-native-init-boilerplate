@@ -3,7 +3,7 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 
-import BusyIndicator, {
+import CrossBusyIndicator, {
   IBusyIndicatorProps,
   IndicatorType,
   Spinner,
@@ -17,7 +17,7 @@ function setup(type = IndicatorType.MaterialIndicator) {
     type,
   };
 
-  const wrapper = TestRenderer.create(<BusyIndicator {...props} />);
+  const wrapper = TestRenderer.create(<CrossBusyIndicator {...props} />);
 
   return {
     props,
@@ -32,7 +32,7 @@ describe('components', () => {
    *    const busyProps = enzymeWrapper.find(BusyIndicator).props();
    *    expect(busyProps.isBusy).toBe(false);
    */
-  describe('CrossBusyIndicator', () => {
+  describe('<CrossBusyIndicator />', () => {
     it('should render self and subcomponents', () => {
       const { wrapper } = setup();
       expect(wrapper.toJSON()).toMatchSnapshot();

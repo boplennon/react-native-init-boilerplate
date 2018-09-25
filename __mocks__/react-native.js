@@ -1,6 +1,6 @@
-module.exports = {
+module.exports = ({
   StyleSheet: {
-    create: styles => styles,
+    create: (styles) => styles,
   },
   Platform: {
     OS: 'ios',
@@ -11,15 +11,21 @@ module.exports = {
       height: 1,
     }),
   },
+  View: 'View',
+  Text: 'Text',
+  Button: 'Button',
+  ScrollView: 'View',
+  Linking: { openURL: jest.fn() },
   Animated: {},
   AsyncStorage: {
-    setItem: () => new Promise(resolve => resolve(), null),
-    getItem: key => new Promise(resolve => resolve(`{"key": "${key}"}`), null),
+    setItem: () => new Promise((resolve) => resolve(), null),
+    getItem: (key) =>
+      new Promise((resolve) => resolve(`{"key": "${key}"}`), null),
     removeItem: (key, callback) => {
       if (callback) {
         callback();
       }
-      return new Promise(resolve => resolve(), null);
+      return new Promise((resolve) => resolve(), null);
     },
   },
-};
+});

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components CrossApolloClient should render self and subcomponents 1`] = `
+exports[`components <CrossApolloClient> should render self and subcomponents 1`] = `
 <View
   style={
     Object {

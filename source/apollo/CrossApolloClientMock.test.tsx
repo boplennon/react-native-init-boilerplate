@@ -12,7 +12,7 @@ const wrapper = TestRenderer.create(
 );
 
 describe('components', () => {
-  describe('CrossApolloClientMock', () => {
+  describe('<CrossApolloClientMock />', () => {
     it('should render self and subcomponents', () => {
       const json = wrapper.toJSON();
       expect(json).toMatchSnapshot();

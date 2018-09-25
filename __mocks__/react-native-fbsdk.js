@@ -1,13 +1,13 @@
-module.exports = {
+module.exports = ({
     AccessToken: {
-        getCurrentAccessToken() {
+        getCurrentAccessToken: () => {
             return {accessToken: 'fbTokenMock'};
         }
     },
     LoginManager: {
-        logInWithReadPermissions() {
+        logInWithReadPermissions: () => {
             return {isCancelled: false};
         }
-
-    }
-}
+    },
+    LoginButton: 'Button'
+})
